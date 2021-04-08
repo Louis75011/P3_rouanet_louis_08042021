@@ -1,0 +1,20 @@
+{
+  "name": "oc_projet_dev_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "3e projet du parcours développeur junior d'OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "keywords": [
+    "site",
+    "ohmyfood",
+    "restaurant",
+    "commande",
+    "alimentation",
+    "qualité",
+    "France"
+  ],
+  "author": "Florian Rouanet",
+  "license": "ISC"
+}
