@@ -1,9 +1,55 @@
-body, h1, h2 {
+body, h1, h2, h3 {
   font-family: "Shrikhand";
 }
 
 body, p {
   font-family: "Roboto", sans-serif;
+}
+
+body, a {
+  text-decoration: none;
+}
+body:visited, a:visited {
+  color: inherit;
+}
+
+.foot {
+  padding: 0.9rem;
+  font-size: 0.9em;
+  line-height: 1.65;
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+.title-foot {
+  font-style: italic;
+  font-size: 0.6rem;
+}
+
+.icon-object {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.distancing {
+  margin-left: 10px;
+}
+
+.distancing-2 {
+  margin-left: 4px;
+}
+
+.foot h2 {
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #9356DC;
+  border-radius: 2rem;
+  padding: 0.7rem 1.4rem;
+  color: #ffffff;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

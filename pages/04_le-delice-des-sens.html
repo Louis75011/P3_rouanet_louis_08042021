@@ -8,17 +8,20 @@
     <meta charset="UTF-8">
     <meta name="author" content="Florian Rouanet">
     <meta name="keywords" content="HTML, CSS, Sass, Git">
-    <meta name="description" content="Site, ohmyfood, restaurant, commande, alimentation, qualité, France.">
+    <meta name="description" content="Site, ohmyfood, restaurant, commande, manger, alimentation, qualité, France.">
     <!-- Titre et logo du site affichés -->
     <title>Ohmyfood! Paris - Composez votre menu et reservez dans les meilleurs restaurants de Paris !</title>
     <link rel="icon" type="image/x-icon" href="./img/logo/ohmyfood.png">
     <!--Liens vers les feuilles de styles-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Le choix imposé de la police d'écriture des titres et des paragraphes - Shrikhand & Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Ajout de la bibliothèque de FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <!--Affichage ajusté en responsive pour toutes sortes de mobiles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,11 +53,81 @@
 
 <body>
     <header>
-
+        <!-- Même que la page 1 sauf image -->
+        <h1>ohmyfood</h1>
+        <!-- IMG -->
     </header>
+    <section>
+        <h2>Le délice des sens</h2>
+            <!-- Logo coeur -->
 
-    <footer>
+            <h2>ENTRÉES</h2>
+            <!-- Soulignement vert -->
 
+            <h3>Tartare de thon</h3>
+            <p>Assaisonné de yuzu</p>
+            <p>25€</p>
+
+            <h3>Bouchée de homard croustillant</h3>
+            <p>Et sa farandole de petits légumes</p>
+            <p>35€</p>
+
+            <h3>Velouté de cèpes</h3>
+            <p>Aux truffes</p>
+            <p>20€</p>
+    </section>
+
+    <section>
+        <h2>PLATS</h2>
+        <!-- Soulignement vert -->
+
+        <h3>Poulet rôti aux herbes de Provence</h3>
+        <p>Et sa crème de truffe</p>
+        <p>40€</p>
+
+        <h3>Langouste rôtie</h3>
+        <p>Et ses légumes de saison</p>
+        <p>35€</p>
+
+        <h3>Côte de boeuf Angus</h3>
+        <p>Et sa purée de panais</p>
+        <p>44€</p>
+    </section>
+
+    <section>
+        <h2>DESSERTS</h2>
+        <!-- Soulignement vert -->
+
+        <h3>Farandole de desserts</h3>
+        <p>Du chef</p>
+        <p>18€</p>
+
+        <h3>Crème brulée</h3>
+        <p>Revisitée</p>
+        <p>22€</p>
+
+        <h3>Tiramisu</h3>
+        <p>À la noisette</p>
+        <p>23€</p>
+    </section>
+
+    <!-- <label>
+        <input type="search" name="quartier" placeholder="Commander" />
+    </label> -->
+
+    <!-- Gestion du pied-de-page (texte, logo) -->
+    <footer class="foot">
+        <div class="title-foot">
+            <h2>ohmyfood</h2>
+        </div>
+        <p><span class="icon-object">
+                <i class="fas fa-utensils"></i><span class="distancing">Proposer un restaurant</span>
+            </span>
+            <span class="icon-object">
+                <i class="fas fa-hands-helping"></i><span class="distancing-2">Devenir partenaire</span>
+            </span>
+            Mentions légales<br>
+            Contact</p>
     </footer>
 </body>
 

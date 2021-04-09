@@ -8,17 +8,20 @@
     <meta charset="UTF-8">
     <meta name="author" content="Florian Rouanet">
     <meta name="keywords" content="HTML, CSS, Sass, Git">
-    <meta name="description" content="Site, ohmyfood, restaurant, commande, alimentation, qualité, France.">
+    <meta name="description" content="Site, ohmyfood, restaurant, commande, manger, alimentation, qualité, France.">
     <!-- Titre et logo du site affichés -->
     <title>Ohmyfood! Paris - Composez votre menu et reservez dans les meilleurs restaurants de Paris !</title>
     <link rel="icon" type="image/x-icon" href="./img/logo/ohmyfood.png">
     <!--Liens vers les feuilles de styles-->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Le choix imposé de la police d'écriture des titres et des paragraphes - Shrikhand & Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Ajout de la bibliothèque de FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <!--Affichage ajusté en responsive pour toutes sortes de mobiles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,11 +53,81 @@
 
 <body>
     <header>
-
+        <!-- Même que la page 1 sauf image -->
+        <h1>ohmyfood</h1>
+        <!-- IMG -->
     </header>
+    <section>
+        <h2>Á la française</h2>
+            <!-- Logo coeur -->
 
-    <footer>
+            <h2>ENTRÉES</h2>
+            <!-- Soulignement vert -->
 
+            <h3>Tartare de poulpe acidulé</h3>
+            <p>Aux zestes d'orange</p>
+            <p>25€</p>
+
+            <h3>Velouté de légumes d'antan</h3>
+            <p>Carotte, panais, topinambour</p>
+            <p>35€</p>
+
+            <h3>Soupe à l'oignon</h3>
+            <p>Revisitée</p>
+            <p>20€</p>
+    </section>
+
+    <section>
+        <h2>PLATS</h2>
+        <!-- Soulignement vert -->
+
+        <h3>Coquilles Saint-Jacques</h3>
+        <p>Accompagnées d'une purée de panais</p>
+        <p>40€</p>
+
+        <h3>Magret de canard</h3>
+        <p>Et parmentier de pommes de terre</p>
+        <p>35€</p>
+
+        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+        <p>Sur son lit de gnocchis aux légumes</p>
+        <p>44€</p>
+    </section>
+
+    <section>
+        <h2>DESSERTS</h2>
+        <!-- Soulignement vert -->
+
+        <h3>Pétales de violettes glacés</h3>
+        <p>Et purée de noisettes</p>
+        <p>18€</p>
+
+        <h3>Fondant au chocolat</h3>
+        <p>Revisité</p>
+        <p>22€</p>
+
+        <h3>Millefeuille croustillant</h3>
+        <p>Myrtilles et pâte d’amande</p>
+        <p>23€</p>
+    </section>
+
+    <!-- <label>
+        <input type="search" name="quartier" placeholder="Commander" />
+    </label> -->
+
+    <!-- Gestion du pied-de-page (texte, logo) -->
+    <footer class="foot">
+        <div class="title-foot">
+            <h2>ohmyfood</h2>
+        </div>
+        <p><span class="icon-object">
+                <i class="fas fa-utensils"></i><span class="distancing">Proposer un restaurant</span>
+            </span>
+            <span class="icon-object">
+                <i class="fas fa-hands-helping"></i><span class="distancing-2">Devenir partenaire</span>
+            </span>
+            Mentions légales<br>
+            Contact</p>
     </footer>
 </body>
 

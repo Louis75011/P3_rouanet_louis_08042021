@@ -1,4 +1,4 @@
-﻿La palette du goût
+La palette du goût
 
 Entrées
 Fricassée d'escargot
@@ -40,6 +40,12 @@ Mousse au chocolat
 Au piment d'Espelette et à la truffe noire
 23€  
   
+
+
+
+
+
+
 ---     
 
 Le délice des sens
@@ -85,6 +91,12 @@ Tiramisu
 
 ---
 
+
+
+
+
+
+
 La note enchantée
 
 Entrées
@@ -129,6 +141,10 @@ Avec son coulis de citron
 Tarte au citron meringuée 
 Déstructurée
 23€
+
+
+
+
 
 ---
 

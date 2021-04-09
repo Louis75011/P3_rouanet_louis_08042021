@@ -1,5 +1,20 @@
-@import "base";
-@import "components";
-@import "layout";
-@import "pages";
+// Fichier principal regroupant l'ensemble des partiels et compilant le CSS
+
 @import "utils";
+@import "base";
+@import "layout";
+@import "components";
+@import "pages";
+
+
+// Responsive example
+// @mixin mobile-only {
+//     @media screen and (max-width: map-get($breakpoints, mobile)){
+//         grid-template-columns: 1fr;
+//     }
+//   }
+//   .proj-grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     @include mobile-only;
+//   }

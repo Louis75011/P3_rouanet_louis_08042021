@@ -1,13 +1,38 @@
-// Fichier regroupant les variables et les mixins qui stockent des propriétés utiles
+// Fichier regroupant variables, mixins et fonctions afin de stocker des règles/propriétés utiles
 
+// Variables
 // Selection des couleurs principales
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$white: #ffffff;
+$gray: #c3c3c3;
+$graydark: #3b3b3b;
+$black: #000000;
 
 // Espacement entre les éléments du site
-$distancing: 3rem;
+$distancing: 0.9rem;
+$padding-dimensions: 1rem 2rem 3rem 4rem;
 
-// @mixin 
-//     justify-content: center
-//     align-items: center
+// Redimension des tailles d'écriture
+$text-size: 2rem;
+
+// Mixins
+@mixin background($gray){
+    padding: 30vh;
+    // background-color: $gray;
+    border-radius: 8vh;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    // Autoprefixeur pour navigateurs
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+}
+
+// @mixin heading-shadow($colour:$colour-primary, $size: $heading-shadow-size){
+//     text-shadow: $size $size lightness($colour, 10%);
+// }

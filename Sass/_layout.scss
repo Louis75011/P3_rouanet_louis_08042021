@@ -1,6 +1,64 @@
-// Fichier des mises en pages et formulaires avec Bloc, Elément et Modificateur) + parties importantes (comme le header & le footer)
+// Fichier des mises en pages, placements et formulaires avec Bloc, Elément et Modificateur) + parties importantes (comme le header & le footer)
 
+// Footer de toutes les pages
+.foot {
+    padding: $distancing;
+    font-size: 0.9em;
+    line-height: 1.65;
+    background-color: $graydark;
+    color: $white;
+}
 
+.title-foot {
+    font-style: italic;
+    font-size: 0.6rem;
+}
+
+.icon-object {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.distancing {
+    margin-left: 10px;
+}
+
+.distancing-2 {
+    margin-left: 4px;
+}
+
+.foot h2 {
+    font-size: 1rem;
+}
+
+// Examples of animations
+// transform: scaleX(1) scaleY(1.2) rotate(0deg)
+
+// $ background-color: #15DEA5
+// .btn {
+//     &:hover { background-color: darken($clr-btn, 5);}
+//     }
+
+// @keyframes progress-bar{
+//     0% {
+//         transform: scaleX(0);
+//     }
+//     17% {
+//         transform: scaleX(.18);
+//     }
+//     24% {
+//         transform: scaleX(.40);
+//         animation-timing-function: cubic-bezier(.9,0,.1,1);
+//     }
+//     46% {
+//         transform: scaleX(.81);
+//         animation-timing-function: cubic-bezier(.25,0.25,1);
+//     }
+//     100% {
+//         transform: scaleX(1);
+//     }
+// }
 
 
 // Footer

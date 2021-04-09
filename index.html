@@ -12,13 +12,16 @@
     <!-- Titre et logo du site affichés -->
     <title>Ohmyfood! Paris - Composez votre menu et reservez dans les meilleurs restaurants de Paris !</title>
     <link rel="icon" type="image/x-icon" href="./img/logo/ohmyfood.png">
-    <!--Liens vers les feuilles de styles--> 
-    <link rel="stylesheet" href="./CSS/style.css">
+    <!--Liens vers les feuilles de styles-->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- Le choix imposé de la police d'écriture des titres et des paragraphes - Shrikhand & Roboto-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Ajout de la bibliothèque de FontAwesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <!--Affichage ajusté en responsive pour toutes sortes de mobiles-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -60,7 +63,7 @@
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
 
-        <button title="Rechercher la liste de nos restaurants">Explorer nos restaurants</button>
+        <button title="Rechercher la liste de nos restaurants" class="btn">Explorer nos restaurants</button>
 
     </header>
 
@@ -76,27 +79,44 @@
     <article>
         <h2>Restaurants</h2>
 
-        <h3>La palette du goût</h2>
-        <p>Ménilmontant</p>
+        <a class="card" href="./la-note-enchantee.html">
 
-        <h3>La note enchantée</h2>
-        <p>Charonne</p>
+            <a href="./pages/01_la-palette-du-gout.html">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+            </a>
 
-        <h3>À la française</h2>
-        <p>Cité Rouge</p>
+            <a href="./pages/02_la-note-enchantee.html">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+            </a>
 
-        <h3>Le délice des sens</h2>
-        <p>Folie-Méricourt</p>
+            <a href="./pages/03_a-la-francaise.html">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+            </a>
+
+            <a href="./pages/04_le-delice-des-sens.html">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+            </a>
     </article>
 
     <!-- Gestion du pied-de-page (texte, logo) -->
-    <footer>
-        <h1>ohmyfood</h1>
-        <p>Proposer un restaurant<br>
-        Devenir partenaire<br>
-        Mentions légales<br>
-        Contact</p>
+    <footer class="foot">
+        <div class="title-foot">
+            <h2>ohmyfood</h2>
+        </div>
+        <p><span class="icon-object">
+                <i class="fas fa-utensils"></i><span class="distancing">Proposer un restaurant</span>
+            </span>
+            <span class="icon-object">
+                <i class="fas fa-hands-helping"></i><span class="distancing-2">Devenir partenaire</span>
+            </span>
+            Mentions légales<br>
+            Contact</p>
     </footer>
+
 </body>
 
 </html>
