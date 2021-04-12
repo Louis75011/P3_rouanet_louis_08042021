@@ -6,7 +6,10 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $white: #ffffff;
-$gray: #c3c3c3;
+$verylightgray: #f7f7f7;
+$lightgray: #f4f4f4;
+$gray-intermediate: #d9d9d9;
+$gray-intermediate-2: #939393;
 $graydark: #3b3b3b;
 $black: #000000;
 
@@ -18,20 +21,22 @@ $padding-dimensions: 1rem 2rem 3rem 4rem;
 $text-size: 2rem;
 
 // Mixins
+@mixin operation-button {
+    background-color: $verylightgray;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
 @mixin background($gray){
     padding: 30vh;
     // background-color: $gray;
     border-radius: 8vh;
 }
 
-@mixin center{
-    display: flex;
-    justify-content: center;
-    // Autoprefixeur pour navigateurs
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-}
+// Autoprefixeur pour navigateurs
 
 // @mixin heading-shadow($colour:$colour-primary, $size: $heading-shadow-size){
 //     text-shadow: $size $size lightness($colour, 10%);

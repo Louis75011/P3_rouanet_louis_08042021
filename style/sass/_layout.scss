@@ -1,35 +1,90 @@
 // Fichier des mises en pages, placements et formulaires avec Bloc, Elément et Modificateur) + parties importantes (comme le header & le footer)
 
+// Header page index pour mobile
+
+.background-header {
+    background-color: $lightgray;
+    width: 100%;
+}
+
+.container-centrage {
+    display: flex;
+    justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 200px;
+}
+
+.centrage-specific-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    display: flex;
+    text-align: center;
+}
+
+.centrage-specific-width-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    display: flex;
+    text-align: center;
+}
+
+.element-offset {
+    transform: translateY(-40px);
+}
+
+.element-offset-little {
+    transform: translateY(-30px);
+}
+
+// .annulation-style {
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// header, h2 {
+//     font-weight: bold;
+// }
+
 // Footer de toutes les pages
+.foot h2 {
+    font-size: 1rem;
+}
+
+// Bloc BEM du footer
 .foot {
     padding: $distancing;
     font-size: 0.9em;
     line-height: 1.65;
     background-color: $graydark;
     color: $white;
+    font-weight: bold;
+    // display: flex;
+    // flex-direction: column;
+    &__title {
+        font-style: italic;
+        font-size: 0.58rem;
+    }
+    &__icon-object {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
-.title-foot {
-    font-style: italic;
-    font-size: 0.6rem;
+// La collection de margins
+.down-distancing {
+    margin-bottom: 3rem;
 }
 
-.icon-object {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.distancing {
+.left-distancing {
     margin-left: 10px;
 }
 
-.distancing-2 {
+.left-distancing-2 {
     margin-left: 4px;
-}
-
-.foot h2 {
-    font-size: 1rem;
 }
 
 // Examples of animations

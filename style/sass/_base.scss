@@ -1,13 +1,23 @@
 // Fichier pour définir les fondations de votre site (police de caractères et normes pour tout le site
 
-// La police d'écriture des titres et des textes
-body, h1, h2, h3 {
+
+
+// La police d'écriture des titres et des textes de tout le body
+h1, h3 {
     font-family: 'Shrikhand';
 }
 
-body, p {
+h2, p {
     font-family: 'Roboto', sans-serif;
 }
+
+h5 {
+    font-size: 20px;
+}
+
+// h2 {
+//     font-weight: bold;
+// }
 
 // Comportement des liens
 body, a {

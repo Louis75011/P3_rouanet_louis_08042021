@@ -1,7 +1,19 @@
 // Fichier qui contient le code qui ne s'applique qu'à une seule page à la fois.
 
+// La partie article/images de l'index
+article img {
+    height: 15rem;
+}
 
+.background-article {
+    background-color: $lightgray;
+    padding-top: 10px;
+}
 
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 // Pages de menu (x4)
 // ● 4 pages contenant chacune le menu d’un restaurant.
