@@ -82,14 +82,14 @@
     <section>
         <h4 style="font-size: 1.6rem;">Fonctionnement</h4>
         <div class="operation-display">
-            <button title="Sélection de lieu où manger" class="operation-display__btn1"><span>1<i
-                        class="fas fa-mobile-alt"></i>Choisissez un restaurant</button></span>
+            <button title="Sélection de lieu où manger" class="operation-display__btn1"><span class="lozenge">1</span><i
+                        class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
 
-            <button title="Choisir son menu alimentaire" class="operation-display__btn2"><span>2<i
-                    class="fas fa-bars"></i>Composez votre menu</button></span>
+                        <button title="Choisir son menu alimentaire" class="operation-display__btn2"><span class="lozenge">2</span><i
+                        class="fas fa-bars"></i>Composez votre menu</button>
 
-            <button title="Prendre un repas sur place" class="operation-display__btn3"><span>3<i
-                    class="fas fa-store"></i>Dégustez au restaurant</button></span>
+            <button title="Prendre un repas sur place" class="operation-display__btn3"><span class="lozenge">3</span><i
+                        class="fas fa-store"></i>Dégustez au restaurant</button>
         </div>
         <!-- <p>1</p><p>2</p><p>3</p> propriété transform -->
     </section>
@@ -100,31 +100,39 @@
         <h4 style="font-size: 1.6rem;">Restaurants</h4>
 
         <div class="container-grid">
-            <a href="./la-note-enchantee.html">
+            <div class="container-grid__box-many">
+                <a href="./la-note-enchantee.html">
 
-                <a href="./pages/01_la-palette-du-gout.html">
-                    <img src="./img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </a>
+                    <a href="./pages/01_la-palette-du-gout.html">
+                        <img src="./img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </a>
+            </div>
 
+            <div class="container-grid__box-other">
                 <a href="./pages/02_la-note-enchantee.html">
                     <img src="./img/restaurants/02_stil-u2Lp8tXIcjw-unsplash.jpg">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                 </a>
+            </div>
 
+            <div class="container-grid__box-many">
                 <a href="./pages/03_a-la-francaise.html">
                     <img src="./img/restaurants/03_toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
                 </a>
+            </div>
 
+            <div class="container-grid__box-many">
                 <a href="./pages/04_le-delice-des-sens.html">
                     <img src="./img/restaurants/04_louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
                 </a>
+            </div>
         </div>
     </article>
 

@@ -31,6 +31,14 @@
     }
 }
 
+.lozenge {
+    border-radius: 30px;
+    padding: 5px;
+    background-color: $color-primary;
+    // margin-right: 4rem;
+    // transform: translateY(40px);
+}
+
 .operation-display i {
     margin-right: 17px;
 }

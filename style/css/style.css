@@ -127,6 +127,12 @@ body:visited, a:visited {
   width: 100%;
 }
 
+.lozenge {
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #9356DC;
+}
+
 .operation-display i {
   margin-right: 17px;
 }
@@ -143,18 +149,30 @@ body:visited, a:visited {
   font-weight: bold;
 }
 
-article img {
-  height: 15rem;
-}
-
 .background-article {
   background-color: #f4f4f4;
   padding-top: 10px;
 }
 
 .container-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.container-grid__box-many {
+  padding: 0px 31px;
+}
+.container-grid__box-other {
+  padding: 0px 41px;
+}
+
+article img {
+  height: 15rem;
+}
+
+article a {
+  color: #000000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
