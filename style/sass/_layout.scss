@@ -1,7 +1,6 @@
 // Fichier des mises en pages, placements et formulaires avec Bloc, Elément et Modificateur) + parties importantes (comme le header & le footer)
 
-// Header page index pour mobile
-
+// Le header (page index mobile)
 .background-header {
     background-color: $lightgray;
     width: 100%;
@@ -10,9 +9,6 @@
 .container-centrage {
     display: flex;
     justify-content: center;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 200px;
 }
 
 .centrage-specific-width {
@@ -39,15 +35,6 @@
     transform: translateY(-30px);
 }
 
-// .annulation-style {
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// header, h2 {
-//     font-weight: bold;
-// }
-
 // Footer de toutes les pages
 .foot h2 {
     font-size: 1rem;
@@ -61,12 +48,12 @@
     background-color: $graydark;
     color: $white;
     font-weight: bold;
-    // display: flex;
-    // flex-direction: column;
+
     &__title {
         font-style: italic;
         font-size: 0.58rem;
     }
+
     &__icon-object {
         display: flex;
         flex-direction: row;
@@ -74,7 +61,7 @@
     }
 }
 
-// La collection de margins
+// Collection diverse de margins
 .down-distancing {
     margin-bottom: 3rem;
 }
@@ -87,7 +74,7 @@
     margin-left: 4px;
 }
 
-// Examples of animations
+// Exemples d'animations
 // transform: scaleX(1) scaleY(1.2) rotate(0deg)
 
 // $ background-color: #15DEA5

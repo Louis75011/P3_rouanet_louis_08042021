@@ -1,13 +1,13 @@
 // Fichier pour définir les fondations de votre site (police de caractères et normes pour tout le site
 
-
-
 // La police d'écriture des titres et des textes de tout le body
-h1, h3 {
+h1,
+h3 {
     font-family: 'Shrikhand';
 }
 
-h2, p {
+h2,
+p {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,20 +15,23 @@ h5 {
     font-size: 20px;
 }
 
-// h2 {
-//     font-weight: bold;
-// }
+// Recentrage pages et sections
+.padding-global {
+    padding: 8px;
+}
+
+body {
+    margin: 0 !important;
+}
 
 // Comportement des liens
-body, a {
+a {
     text-decoration: none;
+
     &:visited {
         color: inherit;
     }
 }
-
-// Fixation des images
-
 
 
 // Page d’accueil (x1)

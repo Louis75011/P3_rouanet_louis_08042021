@@ -1,41 +1,24 @@
-// Fichier qui contient le code qui ne s'applique qu'à une seule page à la fois.
+// Fichier qui contient le reste du code et ce qui s'applique aux pages "secondaires".
 
-// La partie article/images de l'index
+// Partie article/images de l'index
 .background-article {
     background-color: $lightgray;
     padding-top: 10px;
 }
 
+// Bloc BEM de la partie Restaurants
 .container-grid {
     display: flex;
     flex-direction: column;
-    line-height: 1.15;
-    // display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    //     grid-column: span 3;
-    //     box-sizing: border-box;
+    line-height: 1.10;
+
     &__box-many {
-        padding: 0px 31px;
-        // display: grid;
-        // grid-gap: 1.75rem;
-        // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        // grid-template-rows: repeat(2, 200px);
-        // grid-auto-flow: dense;
-        // grid-gap: 1.75rem;
-        // // grid-template-columns: 1fr;
-        // // grid-row: span 1;
-        // // grid-template-rows: repeat(1, 200px);
-    }
-    &__box-other {
-        padding: 0px 41px;
-        // image-rendering: initial;
+        padding: 0px 21px;
     }
 }
 
 article img {
-    height: 15rem;
-    // display: flex;
-    // text-align: center;
+    height: 13rem;
 }
 
 article a {
@@ -44,6 +27,126 @@ article a {
 }
 
 
+// 1) Gestion de la page restaurant numéro 1
+// En-tête
+.title-centrage {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-line {
+    display: flex;
+    flex-direction: row;
+
+    &__offset {
+        transform: translateY(-20px);
+    }
+}
+
+.previous-arrow {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: $graydark;
+    font-size: 1.2rem;
+}
+
+.single-img {
+    height: 15.6rem;
+    // position: absolute;
+    // z-index: 0;
+}
+
+// Partie choix alimentaire
+.background-food {
+    background-color: $lightgray;
+    width: 100%;
+    padding-top: 1rem;
+    transform: translateY(-40px);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.title-food {
+    //   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.icon-heart {
+    color: $gray-intermediate-3;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    font-style: normal
+}
+
+.sub-title {
+    font-size: medium;
+    margin-left: 20px;
+    // border: 1px $color-tertiary;
+}
+
+
+.btn-pages {
+    @include button-principal;
+    width: 50%;
+}
+
+.btn-foods {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 60px;
+    box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+    background-color: $white;
+    border-radius: 15px;
+    padding-bottom: -20px;
+
+    &__title {
+        transform: translate(15px, 10px);
+    }
+
+    &__description {
+        transform: translate(15px, -21px);
+    }
+
+    &__price {
+        transform: translateX(175px);
+    }
+
+    &__price-2 {
+        transform: translateX(125px);
+    }
+
+    &__price-3 {
+        transform: translateX(104px);
+    }
+
+    &__price-4 {
+        transform: translateX(57px);
+    }
+
+    &__price-5 {
+        transform: translateX(65px);
+    }
+
+    &__price-6 {
+        transform: translateX(214px);
+    }
+
+    &__price-7 {
+        transform: translateX(245px);
+    }
+
+    &__price-8 {
+        transform: translateX(81px);
+    }
+
+    &__price-9 {
+        transform: translateX(53px);
+    }
+}
 
 // Pages de menu (x4)
 // ● 4 pages contenant chacune le menu d’un restaurant.

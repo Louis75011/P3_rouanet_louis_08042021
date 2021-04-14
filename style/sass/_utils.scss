@@ -8,8 +8,9 @@ $color-tertiary: #99E2D0;
 $white: #ffffff;
 $verylightgray: #f7f7f7;
 $lightgray: #f4f4f4;
-$gray-intermediate: #d9d9d9;
+$gray-intermediate: #dedede;
 $gray-intermediate-2: #939393;
+$gray-intermediate-3: #545454;
 $graydark: #3b3b3b;
 $black: #000000;
 
@@ -17,10 +18,21 @@ $black: #000000;
 $distancing: 0.9rem;
 $padding-dimensions: 1rem 2rem 3rem 4rem;
 
-// Redimension des tailles d'écriture
+// Redimension aggrandie des tailles d'écriture
 $text-size: 2rem;
 
 // Mixins
+@mixin button-principal {
+    background-color: $color-primary;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.9rem 1.4rem;
+    margin-bottom: 20px;
+    color: $white;
+    font-size: 1rem;
+    box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.2);
+}
+
 @mixin operation-button {
     background-color: $verylightgray;
     padding: 20px;
@@ -28,12 +40,6 @@ $text-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bold;
     width: 100%;
-}
-
-@mixin background($gray){
-    padding: 30vh;
-    // background-color: $gray;
-    border-radius: 8vh;
 }
 
 // Autoprefixeur pour navigateurs
