@@ -5,15 +5,15 @@
     background-color: $gray-intermediate;
     border-top: solid 2px $gray-intermediate-2;
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 50px;
+    // width: 100%;
     vertical-align: middle !important;
-    width: 100%;
-    align-items: center;
 }
 
 .search input {
-    margin-left: $distancing;
+    margin-left: 30px;
     color: $black;
     font-size: 1rem;
     font-weight: bold;

@@ -99,15 +99,14 @@ a:visited {
   background-color: #dedede;
   border-top: solid 2px #939393;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 50px;
   vertical-align: middle !important;
-  width: 100%;
-  align-items: center;
 }
 
 .search input {
-  margin-left: 0.9rem;
+  margin-left: 30px;
   color: #000000;
   font-size: 1rem;
   font-weight: bold;
@@ -123,7 +122,8 @@ input[type=search] {
 }
 
 .btn {
-  background-color: #9356DC;
+  cursor: pointer;
+  background: linear-gradient(#FF79DA, 25%, #9356DC);
   border-radius: 2rem;
   border: none;
   padding: 0.9rem 1.4rem;
@@ -206,6 +206,7 @@ article a {
 .one-line {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 .one-line__offset {
   transform: translateY(-20px);
@@ -213,13 +214,13 @@ article a {
 
 .previous-arrow {
   margin-top: 30px;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #3b3b3b;
   font-size: 1.2rem;
 }
 
 .single-img {
-  height: 15.6rem;
+  height: 15.6rem !important;
 }
 
 .background-food {
@@ -245,13 +246,21 @@ article a {
   font-style: normal;
 }
 
+.icon-heart-active {
+  display: none;
+}
+
 .sub-title {
   font-size: medium;
+  line-height: 1.5;
   margin-left: 20px;
+  border-bottom: 3px solid #99E2D0;
+  width: 2.5em;
 }
 
 .btn-pages {
-  background-color: #9356DC;
+  cursor: pointer;
+  background: linear-gradient(#FF79DA, 25%, #9356DC);
   border-radius: 2rem;
   border: none;
   padding: 0.9rem 1.4rem;

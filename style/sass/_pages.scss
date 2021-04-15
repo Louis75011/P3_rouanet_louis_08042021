@@ -37,6 +37,7 @@ article a {
 .one-line {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 
     &__offset {
         transform: translateY(-20px);
@@ -45,13 +46,13 @@ article a {
 
 .previous-arrow {
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: $graydark;
     font-size: 1.2rem;
 }
 
 .single-img {
-    height: 15.6rem;
+    height: 15.6rem !important;
     // position: absolute;
     // z-index: 0;
 }
@@ -81,10 +82,25 @@ article a {
     font-style: normal
 }
 
+// .icon-heart:active {
+//     display: none;
+// }
+
+.icon-heart-active {
+    display: none;
+    // color: $color-secondary;
+}
+
+// .icon-heart-active:active {
+//     color: $color-secondary;
+// }
+
 .sub-title {
     font-size: medium;
+    line-height: 1.5;
     margin-left: 20px;
-    // border: 1px $color-tertiary;
+    border-bottom: 3px solid $color-tertiary;
+    width: 2.5em;
 }
 
 

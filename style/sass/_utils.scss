@@ -23,7 +23,8 @@ $text-size: 2rem;
 
 // Mixins
 @mixin button-principal {
-    background-color: $color-primary;
+    cursor: pointer;
+    background: linear-gradient($color-secondary, 25%, $color-primary);
     border-radius: 2rem;
     border: none;
     padding: 0.9rem 1.4rem;
