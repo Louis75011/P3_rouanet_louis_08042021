@@ -76,24 +76,19 @@ article a {
 }
 
 .icon-heart {
-    color: $gray-intermediate-3;
+    color: $gray-intermediate-4;
     margin-left: 3rem;
     font-size: 1.5rem;
     font-style: normal
 }
 
-// .icon-heart:active {
-//     display: none;
-// }
-
-.icon-heart-active {
-    display: none;
-    // color: $color-secondary;
+span.icon-heart:active i {
+    font-weight: 900;
+    background:-webkit-linear-gradient($color-primary, $color-secondary);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
 }
-
-// .icon-heart-active:active {
-//     color: $color-secondary;
-// }
 
 .sub-title {
     font-size: medium;
@@ -102,7 +97,6 @@ article a {
     border-bottom: 3px solid $color-tertiary;
     width: 2.5em;
 }
-
 
 .btn-pages {
     @include button-principal;

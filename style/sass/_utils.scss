@@ -10,7 +10,8 @@ $verylightgray: #f7f7f7;
 $lightgray: #f4f4f4;
 $gray-intermediate: #dedede;
 $gray-intermediate-2: #939393;
-$gray-intermediate-3: #545454;
+$gray-intermediate-3: #6e6e6e;
+$gray-intermediate-4: #545454;
 $graydark: #3b3b3b;
 $black: #000000;
 
@@ -35,12 +36,13 @@ $text-size: 2rem;
 }
 
 @mixin operation-button {
+    padding: 29px 25px 26px 23px;
+    border-radius: 19px;
+    border: none;
     background-color: $verylightgray;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    width: 100%;
+    margin-bottom: 1.3rem;
+    font-size: 1.05em;
+    box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
 }
 
 // Autoprefixeur pour navigateurs
