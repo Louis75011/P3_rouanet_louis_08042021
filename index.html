@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!--En-tête principale de la page-->
-
+<!--En-tête principale de la page d'acceuil-->
 <head>
     <!-- Meta : descriptions du présent travail, pour la recherche notamment-->
     <meta charset="UTF-8">
@@ -52,7 +51,7 @@
 </head>
 
 <body>
-    <!-- Gestion du haut de la page et de la présentation du site (texte, recherche, bouton principal) -->
+    <!-- Gestion du haut de la page et de la présentation du site (titre, recherche, bouton principal) -->
     <header>
         <div class="container-centrage">
             <h1>Ohmyfood</h1>
@@ -79,13 +78,11 @@
         </div>
     </header>
 
-    <!-- GesRestaur
-        tion des boutons pour la section Fonctionnement (pastille, logo, texte, bouton) -->
-
+    <!-- Gestion des boutons pour la section Fonctionnement (pastille, logo, texte, bouton) -->
     <section class="padding-global">
-        <h4 style="font-size: 1.6rem;">Fonctionnement</h4>
+        <h4 style="font-size: 1.6rem; margin-left: 5px;">Fonctionnement</h4>
         <div class="operation-display">
-            <button title="Sélection de lieu où manger" class="operation-display__btn1"><span
+            <button title="Sélection de lieu où manger" type="checkbox" class="operation-display__btn1"><span
                     class="operation-display__lozenge">1</span><i class="fas fa-mobile-alt"></i>Choisissez un
                 restaurant</button>
 
@@ -93,53 +90,79 @@
                     class="operation-display__lozenge">2</span><i class="fas fa-list"></i>Composez votre menu</button>
 
             <button title="Prendre un repas sur place" class="operation-display__btn3"><span
-                class="operation-display__lozenge">3</span><i class="fas fa-store"></i>Dégustez au restaurant</button>
+                    class="operation-display__lozenge">3</span><i class="fas fa-store"></i>Dégustez au
+                restaurant</button>
         </div>
-        <!-- <p>1</p><p>2</p><p>3</p> propriété transform -->
     </section>
     <br><br>
 
-    <!-- Gestion de la section Restaurants (image, onglet, coeur, titre et texte) -->
+    <!-- Gestion de la section Restaurants (grille d'images, coeur, texte et favori) -->
     <article class="background-article padding-global">
-        <h4 style="font-size: 1.6rem;">Restaurants</h4>
+        <h4 style="font-size: 1.6rem; margin-left: 3px;">Restaurants</h4>
 
         <div class="container-grid">
-            <div class="container-grid__box-many">
+            <div class="box-many">
                 <a href="./pages/01_la-palette-du-gout.html">
-                    <img src="./img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p>
+                    <img src="./img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        style="height: 12rem; width: 20.2rem;">
                 </a>
+                <div class="textual">
+                    <h4 style="font-size: 18px;">La palette du goût</h4>
+                    <span class="textual-2">
+                        <p style="font-weight: bold;">Ménilmontant</p>
+                    </span>
+                </div>
             </div>
+            <span class="icon-heart-index-1"><i class="far fa-heart"></i></span>
+            <span class="new-1">Nouveau</span>
 
-            <div class="container-grid__box-many">
+            <div class="box-many">
                 <a href="./pages/02_la-note-enchantee.html">
                     <img src="./img/restaurants/02_stil-u2Lp8tXIcjw-unsplashlittle.jpg"
-                        style="height: 10.2rem !important;">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+                        style="height: 12rem; width: 20.2rem;">
                 </a>
+                <div class="textual">
+                    <h4 style="font-size: 18px;">La note enchantée</h4>
+                    <span class="textual-2">
+                        <p style="font-weight: bold;">Charonne</p>
+                    </span>
+                </div>
             </div>
+            <span class="icon-heart-index-2"><i class="far fa-heart"></i></span>
+            <span class="new-2">Nouveau</span>
 
-            <div class="container-grid__box-many">
+            <div class="box-many">
                 <a href="./pages/03_a-la-francaise.html">
-                    <img src="./img/restaurants/03_toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p>
+                    <img src="./img/restaurants/03_toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        style="height: 12rem; width: 20.2rem;">
                 </a>
+                <div class="textual">
+                    <h4 style="font-size: 18px;">À la française</h4>
+                    <span class="textual-2">
+                        <p style="font-weight: bold;">Cité Rouge</p>
+                    </span>
+                </div>
             </div>
+            <span class="icon-heart-index-3"><i class="far fa-heart"></i></span>
 
-            <div class="container-grid__box-many">
+            <div class="box-many">
                 <a href="./pages/04_le-delice-des-sens.html">
-                    <img src="./img/restaurants/04_louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                    <img src="./img/restaurants/04_louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        style="height: 12rem; width: 20.2rem;">
                 </a>
+                <div class="textual">
+                    <h4 style="font-size: 18px;">Le délice des sens</h4>
+                    <span class="textual-2">
+                        <p style="font-weight: bold;">Folie-Méricourt</p>
+                    </span>
+                </div>
             </div>
+            <span class="icon-heart-index-4"><i class="far fa-heart"></i></span>
         </div>
+        <br><br>
     </article>
 
-    <!-- Gestion du pied-de-page (texte, logo) -->
+    <!-- Gestion du pied-de-page (texte et logo) -->
     <footer class="foot">
         <div class="foot__title">
             <h1 style="font-weight: normal; font-style: normal;">ohmyfood</h1>

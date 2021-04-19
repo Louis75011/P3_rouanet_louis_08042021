@@ -33,9 +33,18 @@ $text-size: 2rem;
     color: $white;
     font-size: 1rem;
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.2);
+    &:hover {
+        transform: scale(1.03);
+        transition: 400ms;
+    }
+    &:active {
+        transform: scale(1.07);
+        transition: 100ms;
+    }
 }
 
 @mixin operation-button {
+    cursor: pointer;
     padding: 29px 25px 26px 23px;
     border-radius: 19px;
     border: none;
@@ -43,6 +52,24 @@ $text-size: 2rem;
     margin-bottom: 1.3rem;
     font-size: 1.05em;
     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
+}
+
+@mixin favourite {
+    color: $black;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 305px;
+}
+
+@mixin new {
+    border: none;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 40);
+    margin-bottom: 1.3rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 1em;
+    position: absolute;
+    left: 256px;
 }
 
 // Autoprefixeur pour navigateurs
