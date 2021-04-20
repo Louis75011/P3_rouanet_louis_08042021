@@ -67,10 +67,10 @@ article div img {
 
 span:active i {
     font-weight: 900;
-    background:-webkit-linear-gradient($color-primary, $color-secondary);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 article a {
@@ -131,14 +131,15 @@ article a {
     color: $gray-intermediate-4;
     margin-left: 3rem;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 span.icon-heart:active i {
     font-weight: 900;
-    background:-webkit-linear-gradient($color-primary, $color-secondary);
-    background-clip:text;
-    -webkit-background-clip:text;
-    color:transparent;
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .sub-title {
@@ -208,4 +209,97 @@ span.icon-heart:active i {
     &__price-9 {
         transform: translateX(53px);
     }
+
+    // &:hover {
+    //         padding-left: 10px;
+    //         border-bottom-right-radius: 15px;
+    //         border-top-right-radius: 15px;
+    //         background-color: $color-tertiary;
+    //         color: $color-tertiary;
+
+    //         transition-delay: 500ms;
+    //         transform: translateX(1.2);
+    //     }
 }
+
+// Animation du bouton "ajout aux favoris"
+// .check {
+//     display: none;
+// }
+
+// Animation "apparition des menus"
+.btn-time1 {
+    animation: slidemenu 1200ms;
+    // -moz-animation: slidemenu 1200ms; /* Firefox */
+    // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
+    // -o-animation: fadein 1200ms; /* Opera */
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-time2 {
+    animation: slidemenu 1600ms;
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-time3 {
+    animation: slidemenu 2000ms;
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// .btn-time {
+//     transition-delay: 1900ms;
+//     animation-duration: 2s;
+//     animation-direction: alternate;
+//     animation-name: slidemenu;
+
+//       @keyframes slidemenu {
+//         from {
+//           margin-top: 100%;
+//         }
+//         to {
+//           margin-bottom: 0%;
+//         }
+//       }
+// }
+
+// transition-property: bottom;
+// transform: transition-duration 4s;

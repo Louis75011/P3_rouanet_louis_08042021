@@ -267,6 +267,7 @@ article div img {
   font-size: 1.4rem;
   position: absolute;
   left: 305px;
+  cursor: pointer;
   top: 1170px;
 }
 
@@ -275,6 +276,7 @@ article div img {
   font-size: 1.4rem;
   position: absolute;
   left: 305px;
+  cursor: pointer;
   top: 1447px;
 }
 
@@ -283,6 +285,7 @@ article div img {
   font-size: 1.4rem;
   position: absolute;
   left: 305px;
+  cursor: pointer;
   top: 1724px;
 }
 
@@ -291,6 +294,7 @@ article div img {
   font-size: 1.4rem;
   position: absolute;
   left: 305px;
+  cursor: pointer;
   top: 2001px;
 }
 
@@ -352,6 +356,7 @@ article a {
   color: #545454;
   margin-left: 3rem;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 span.icon-heart:active i {
@@ -434,6 +439,52 @@ span.icon-heart:active i {
 }
 .btn-foods__price-9 {
   transform: translateX(53px);
+}
+
+.btn-time1 {
+  animation: slidemenu 1200ms;
+}
+
+@keyframes slidemenu {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn-time2 {
+  animation: slidemenu 1600ms;
+}
+
+@keyframes slidemenu {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btn-time3 {
+  animation: slidemenu 2000ms;
+}
+
+@keyframes slidemenu {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
