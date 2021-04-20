@@ -40,27 +40,34 @@ input[type=search] {
     margin-left: auto;
     margin-right: auto;
     width: 87%;
-    section, i {
+
+    section,
+    i {
         color: $gray-intermediate-3;
     }
 
     &__btn1 {
         @include operation-button;
+
         &:active {
-            background-color: $color-primary;
-            opacity: 0.1;
+            background-color: rgba($color-primary, 0.1);
         }
-        // &i:active {
-        //     background-color: $color-primary;
-        // }
     }
 
     &__btn2 {
         @include operation-button;
+
+        &:active {
+            background-color: rgba($color-primary, 0.1);
+        }
     }
 
     &__btn3 {
         @include operation-button;
+
+        &:active {
+            background-color: rgba($color-primary, 0.1);
+        }
     }
 
     // Pastille violette des boutons
@@ -77,9 +84,10 @@ input[type=search] {
     }
 }
 
-// section.operation-display__btn1:active i {
-//     background-color: $color-primary !important;
-// }
+section .operation-display button:active i {
+    color: $color-primary;
+    // color: rgba($color-primary, 1);
+}
 
 // Icônes des boutons
 .operation-display i {
