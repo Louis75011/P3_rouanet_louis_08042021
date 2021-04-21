@@ -1,4 +1,4 @@
-// Fichier qui contient le reste du code et ce qui s'applique aux pages "secondaires".
+// Fichier qui contient le reste du code et ce qui s'applique aux pages.
 
 // Partie article/images de l'index
 .background-article {
@@ -8,26 +8,44 @@
 
 // Bloc BEM de la partie Restaurants
 .container-grid {
-    padding: 0px 17px;
+    padding: 0px 12px;
 }
 
 .box-many {
     background-color: $white;
     border-radius: 21px;
-    // padding-bottom: -60px;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+    margin-bottom: 1.9rem;
+
+    a {
+        position: relative;
+
+        div.bloc-new {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            user-select: none;
+        }
+    }
 }
 
+// Comportement images d'acceuil
 article div img {
     border-top-left-radius: 21px;
     border-top-right-radius: 21px;
+    width: 100%;
+    display: flex;
 }
 
 .textual {
     position: relative;
     left: 14px;
-    bottom: 10px;
-    line-height: 0.5rem;
+    // bottom: 0px;
+    line-height: 0.05rem;
+    // transform: translateY(-5px);
 }
 
 .textual-2 {
@@ -35,34 +53,18 @@ article div img {
     top: -9px;
 }
 
-.new-1 {
+.new {
     @include new;
-    top: 973px;
 }
 
-.new-2 {
-    @include new;
-    top: 1250px;
+.title-heart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.icon-heart-index-1 {
+.icon-heart-index {
     @include favourite;
-    top: 1170px;
-}
-
-.icon-heart-index-2 {
-    @include favourite;
-    top: 1447px;
-}
-
-.icon-heart-index-3 {
-    @include favourite;
-    top: 1724px;
-}
-
-.icon-heart-index-4 {
-    @include favourite;
-    top: 2001px;
 }
 
 span:active i {
@@ -89,7 +91,8 @@ article a {
 .one-line {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    justify-content: space-between;
+//    margin-top: 20px;
 
     &__offset {
         transform: translateY(-20px);
@@ -103,11 +106,12 @@ article a {
     font-size: 1.2rem;
 }
 
-.single-img {
-    height: 15.6rem !important;
-    // position: absolute;
-    // z-index: 0;
-}
+// .single-img {
+//     width: 120% !important;
+//     height: 15.6rem !important;
+//     position: absolute;
+//     z-index: 0;
+// }
 
 // Partie choix alimentaire
 .background-food {
@@ -144,7 +148,7 @@ span.icon-heart:active i {
 
 .sub-title {
     font-size: medium;
-    line-height: 1.5;
+    // line-height: 1.5;
     margin-left: 20px;
     border-bottom: 3px solid $color-tertiary;
     width: 2.5em;
@@ -156,10 +160,12 @@ span.icon-heart:active i {
 }
 
 .btn-foods {
+    display: flex;
+    flex-direction: row;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 87%;
     height: 60px;
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
     background-color: $white;
@@ -167,47 +173,61 @@ span.icon-heart:active i {
     padding-bottom: -20px;
 
     &__title {
-        transform: translate(15px, 10px);
+        //transform: translate(15px, 10px);
+        margin: 0;
     }
 
     &__description {
-        transform: translate(15px, -21px);
+        //transform: translate(15px, -21px);
+        margin: 0;
+        padding-right: 10px;
+        padding-bottom: 5px;
     }
 
-    &__price {
-        transform: translateX(175px);
+    &__price-1 {
+        //position: relative;
+        //right: -170px;
+        // transform: translateX(175px);
     }
 
     &__price-2 {
-        transform: translateX(125px);
+        position: relative;
+        right: -119px;
     }
 
     &__price-3 {
-        transform: translateX(104px);
+        position: relative;
+        right: -99px;
     }
 
     &__price-4 {
-        transform: translateX(57px);
+        position: relative;
+        right: -54px;
     }
 
     &__price-5 {
-        transform: translateX(65px);
+        position: relative;
+        right: -64px;
     }
 
     &__price-6 {
-        transform: translateX(214px);
+        position: relative;
+        right: -214px;
     }
 
     &__price-7 {
-        transform: translateX(245px);
+        position: relative;
+        right: -246px;
     }
 
     &__price-8 {
-        transform: translateX(81px);
+        position: relative;
+        right: -84px;
     }
 
     &__price-9 {
-        transform: translateX(53px);
+        position: relative;
+        right: -57px;
     }
 
     // &:hover {
@@ -229,7 +249,7 @@ span.icon-heart:active i {
 
 // Animation "apparition des menus"
 .btn-time1 {
-    animation: slidemenu 1200ms;
+    animation: slidemenu 900ms;
     // -moz-animation: slidemenu 1200ms; /* Firefox */
     // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
     // -o-animation: fadein 1200ms; /* Opera */
@@ -250,7 +270,8 @@ span.icon-heart:active i {
 }
 
 .btn-time2 {
-    animation: slidemenu 1600ms;
+    animation: slidemenu 1300ms;
+    margin-top: 10px;
 }
 
 @keyframes slidemenu {
@@ -268,7 +289,8 @@ span.icon-heart:active i {
 }
 
 .btn-time3 {
-    animation: slidemenu 2000ms;
+    animation: slidemenu 1700ms;
+    margin-top: 10px;
 }
 
 @keyframes slidemenu {
@@ -285,13 +307,79 @@ span.icon-heart:active i {
     }
 }
 
+// .size-title {
+//     width: 100%;
+//     height: 50%;
+// }
+
+// .size-text {
+//     width: 80%;
+//     height: 100%;
+// }
+
+// .size-price {
+//     width: 20%;
+//     height: 100%;
+// }
+
+// .left {
+//     background: red;
+//     width: 100%;
+//     height: 100%;
+//     transition: width 500ms ;
+// }
+
+// .right {
+//     display: none;
+//     color: $color-tertiary;
+//     border-radius: 15px;
+//     background-color: $color-tertiary;
+//     width: 0%;
+//     height: 100%;
+//     transition: width 500ms;
+// }
+
+// .left:hover {
+//     width: 80%;
+// }
+
+// .right:hover {
+//     width: 20%;
+// }
+
+// .left:hover + .right {
+//     display: block;
+//     width: 20%;
+// }
+
+// .right:hover + .left {
+//     width: 80%;
+// }
+
+// color:white;
+// padding-top:20px;
+// font-size:10px;
+// opacity:0.6;
+// position:relative;
+// top:10px;
+// transition:all .3s;
+// font-weight:100;
+// text-decoration:none;
+// &:hover{
+//     opacity:1;
+
+// Animation du bouton "ajout aux favoris"
+// .check {
+//     display: none;
+// }
+
 // .btn-time {
 //     transition-delay: 1900ms;
 //     animation-duration: 2s;
 //     animation-direction: alternate;
-//     animation-name: slidemenu;
+//     animation-name: slidebutton;
 
-//       @keyframes slidemenu {
+//       @keyframes slidebutton {
 //         from {
 //           margin-top: 100%;
 //         }
@@ -303,3 +391,52 @@ span.icon-heart:active i {
 
 // transition-property: bottom;
 // transform: transition-duration 4s;
+
+.btn-foods-child {
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+    flex: 1;
+
+    p {
+        margin: 0;
+    }
+}
+
+.btn-foods button {
+    //display: none;
+    border: none;
+    font-size: 30px;
+    width: 0%;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    background-color: $color-tertiary;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: width 300ms ease-in-out;
+}
+
+.btn-foods:hover button {
+    width: 20%;
+    transition: width 300ms ease-in-out;
+}
+
+.btn-foods:hover .btn-foods-child {
+    width: 80%;
+    transition: width 300ms ease-in-out;
+}
+
+.btn-foods .btn-foods-child {
+    width: 100%;
+    transition: width 300ms ease-in-out;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

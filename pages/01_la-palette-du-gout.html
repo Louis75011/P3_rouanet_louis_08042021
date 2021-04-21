@@ -58,7 +58,7 @@
             <span class="previous-arrow"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></span>
             <h1 class="title-centrage">ohmyfood</h1>
         </div>
-        <img src="../img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="single-img">
+        <img src="../img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg" style="width: 100%;">
     </header>
 
     <section class="background-food">
@@ -71,23 +71,25 @@
         <h2 class="sub-title">ENTRÉES</h2>
 
         <div class="btn-foods btn-time1">
-            <h4 class="btn-foods__title">Ficassée d'escargot</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Au piment d'esplette</p>
-                <span class="btn-foods__price">
+            <div class="btn-foods-child">
+                <h4 class="btn-foods__title">Fricassée d'escargot</h4>
+                <div class="one-line btn-foods__description">
+                    <p class="ellipsis" style="font-size: 14px;">Au piment d'esplette</p>
                     <p style="font-size: 14px; font-weight: bold;">25€</p>
-                </span>
-            </span>
-            <!-- <i class="far fa-check-circle"></i> -->
+                </div>    
+            </div>
+            <button>
+                <i class="fas fa-check-circle"></i>
+            </button>
         </div>
 
         <div class="btn-foods btn-time2">
             <h4 class="btn-foods__title">Foie gras de canard mi-cuit</h4>
             <span class="one-line btn-foods__description">
                 <p style="font-size: 14px;">Et ses copaux de truffe noire</p>
-                <span class="btn-foods__price-2">
+                <div class="btn-foods__price-2">
                     <p style="font-size: 14px; font-weight: bold;">35€</p>
-                </span>
+                </div>
             </span>
         </div>
 
@@ -95,9 +97,9 @@
             <h4 class="btn-foods__title">Oeuf au plat</h4>
             <span class="one-line btn-foods__description">
                 <p style="font-size: 14px;">Assaisonné à la truffe sur lit de...</p>
-                <span class="btn-foods__price-3">
-                    <p style="font-size: 14px; font-weight: bold;">20€</p>
-                </span>
+                <div class="btn-foods__price-3">
+                    <p style="font-size: 14px; font-weight: bold;">35€</p>
+                </div>
             </span>
         </div>
         <br>
@@ -195,7 +197,6 @@
 
 <!-- Pages de menu (x4)
 ● 4 pages contenant chacune le menu d’un restaurant.
-
 Pages de menu
 ● À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger décalage dans le temps.
 Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.

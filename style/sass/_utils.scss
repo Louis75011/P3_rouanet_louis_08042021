@@ -34,11 +34,11 @@ $text-size: 2rem;
     font-size: 1rem;
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.2);
     &:hover {
-        transform: scale(1.03);
-        transition: 400ms;
+        transform: scale(1.04);
+        transition: 300ms;
     }
     &:active {
-        transform: scale(1.07);
+        transform: scale(1.0);
         transition: 100ms;
     }
 }
@@ -57,8 +57,9 @@ $text-size: 2rem;
 @mixin favourite {
     color: $black;
     font-size: 1.4rem;
-    position: absolute;
-    left: 305px;
+    position: relative;
+    right: 38px;
+    top :20px;
     cursor: pointer;
 }
 
@@ -66,11 +67,8 @@ $text-size: 2rem;
     border: none;
     background-color: $color-tertiary;
     color: darken($color-tertiary, 40);
-    margin-bottom: 1.3rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem;
     font-size: 1em;
-    position: absolute;
-    left: 256px;
 }
 
 // Autoprefixeur pour navigateurs
