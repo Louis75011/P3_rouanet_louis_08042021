@@ -1,7 +1,7 @@
 // Fichier regroupant variables, mixins et fonctions afin de stocker des règles/propriétés utiles
 
 // Variables
-// Selection des couleurs principales
+// Selection des couleurs principales et secondaires
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -23,6 +23,7 @@ $padding-dimensions: 1rem 2rem 3rem 4rem;
 $text-size: 2rem;
 
 // Mixins
+// Les boutons du site
 @mixin button-principal {
     cursor: pointer;
     background: linear-gradient($color-secondary, 25%, $color-primary);
@@ -32,10 +33,15 @@ $text-size: 2rem;
     margin-bottom: 20px;
     color: $white;
     font-size: 1rem;
-    box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.2);
-    &:hover {
-        transform: scale(1.04);
+    transition: 300ms;
+    box-shadow: 4px 4px 4px rgba(10, 10, 10, 0.2);
+    &:hover,
+    &:focus {
+        transform: scale(1.03);
         transition: 300ms;
+        opacity: 0.9;
+        // background: lighten($color-secondary, 30);
+        box-shadow: 6px 6px 6px rgba(10, 10, 10, 0.3);
     }
     &:active {
         transform: scale(1.0);
@@ -54,6 +60,7 @@ $text-size: 2rem;
     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
 }
 
+// L'icône coeur
 @mixin favourite {
     color: $black;
     font-size: 1.4rem;
@@ -63,6 +70,7 @@ $text-size: 2rem;
     cursor: pointer;
 }
 
+// Le cadre Nouveau
 @mixin new {
     border: none;
     background-color: $color-tertiary;

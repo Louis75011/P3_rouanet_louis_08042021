@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <!--En-tête principale de la page-->
+
 <head>
     <!-- Meta : descriptions du présent travail, pour la recherche notamment-->
     <meta charset="UTF-8">
@@ -51,124 +52,194 @@
 </head>
 
 <!-- Corps de page -->
-<body style="background-color: #f4f4f4;">
 
-    <header style="background-color: white !important;">
+<body>
+    <!-- "background-color: #f4f4f4;" -->
+    <header>
         <div class="one-line">
             <span class="previous-arrow"><a href="../index.html"><i class="fas fa-arrow-left"></i></a></span>
             <h1 class="title-centrage">ohmyfood</h1>
         </div>
-        <img src="../img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg" style="width: 100%;">
+        <img src="../img/restaurants/01_jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="restaurant, paris, belleville, wennington" />
     </header>
 
     <section class="background-food">
         <div class="one-line title-food">
-            <h1>La palette du goût</h1>
+            <h5>La palette du goût</h5>
             <span class="icon-heart"><i class="far fa-heart"></i></span>
         </div>
         <!-- Menu -->
         <!-- Partie 1/3 -->
         <h2 class="sub-title">ENTRÉES</h2>
-
-        <div class="btn-foods btn-time1">
-            <div class="btn-foods-child">
-                <h4 class="btn-foods__title">Fricassée d'escargot</h4>
-                <div class="one-line btn-foods__description">
-                    <p class="ellipsis" style="font-size: 14px;">Au piment d'esplette</p>
-                    <p style="font-size: 14px; font-weight: bold;">25€</p>
-                </div>    
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time1">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Fricassée d'escargot</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Au piment d'esplette</p>
+                        <p>25€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
             </div>
-            <button>
-                <i class="fas fa-check-circle"></i>
-            </button>
         </div>
 
-        <div class="btn-foods btn-time2">
-            <h4 class="btn-foods__title">Foie gras de canard mi-cuit</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Et ses copaux de truffe noire</p>
-                <div class="btn-foods__price-2">
-                    <p style="font-size: 14px; font-weight: bold;">35€</p>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time2">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Foie gras de canard mi-cuit</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Et ses copaux de truffe noire</p>
+                        <p>35€</p>
+                    </div>
                 </div>
-            </span>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
 
-        <div class="btn-foods btn-time3">
-            <h4 class="btn-foods__title">Oeuf au plat</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Assaisonné à la truffe sur lit de...</p>
-                <div class="btn-foods__price-3">
-                    <p style="font-size: 14px; font-weight: bold;">35€</p>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time3">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Oeuf au plat</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Assaisonné à la truffe sur lit de caviar</p>
+                        <p>20€</p>
+                    </div>
                 </div>
-            </span>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
         <br>
 
         <!-- Partie 2/3 -->
         <h2 class="sub-title">PLATS</h2>
 
-        <div class="btn-foods btn-time1">
-            <h4 class="btn-foods__title">Filet de boeuf aux herbes</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Accompagné de sa ribambelle de légu...</p>
-                <span class="btn-foods__price-4">
-                    <p style="font-size: 14px; font-weight: bold;">40€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time1">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Filet de boeuf aux herbes</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Accompagné de sa ribambelle de légumes</p>
+                        <p>40€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
 
-        <div class="btn-foods btn-time2">
-            <h4 class="btn-foods__title">Parmentier de queue de boeuf</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Á la truffe noire sur sa purée de panais</p>
-                <span class="btn-foods__price-5">
-                    <p style="font-size: 14px; font-weight: bold;">35€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time2">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Parmentier de queue de boeuf</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">À la truffe noire sur sa purée de panais</p>
+                        <p>35€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
 
-        <div class="btn-foods btn-time3">
-            <h4 class="btn-foods__title">Filet de Turbot</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Aux agrumes</p>
-                <span class="btn-foods__price-6">
-                    <p style="font-size: 14px; font-weight: bold;">44€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time3">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Filet de turbot</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Aux agrumes</p>
+                        <p>44€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
         <br>
 
         <!-- Partie 3/3 -->
         <h2 class="sub-title">DESSERTS</h2>
 
-        <div class="btn-foods btn-time1">
-            <h4 class="btn-foods__title">Paris-Brest</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Revisité</p>
-                <span class="btn-foods__price-7">
-                    <p style="font-size: 14px; font-weight: bold;">18€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time1">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Paris-Brest</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Revisité</p>
+                        <p>18€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
 
-        <div class="btn-foods btn-time2">
-            <h4 class="btn-foods__title">Macaron au chocolat d'exception</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Et glace à la vanille de Madagascar</p>
-                <span class="btn-foods__price-8">
-                    <p style="font-size: 14px; font-weight: bold;">22€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time2">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Macaron au chocolat d'exception</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Et glace à la vanille de Madagascar</p>
+                        <p>22€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
 
-        <div class="btn-foods btn-time3">
-            <h4 class="btn-foods__title">Mousse au chocolat</h4>
-            <span class="one-line btn-foods__description">
-                <p style="font-size: 14px;">Au piment d'espelette et à la truffe noire</p>
-                <span class="btn-foods__price-9">
-                    <p style="font-size: 14px; font-weight: bold;">23€</p>
-                </span>
-            </span>
+        <div class="container-btn">
+            <a tabindex="0" class="clickable btn-foods btn-time3">
+                <div class="btn-foods-child">
+                    <h4 class="btn-foods__title">Mousse au chocolat</h4>
+                    <div class="one-line btn-foods__description">
+                        <p class="ellipsis">Au piment d'Espelette et à la truffe noire</p>
+                        <p>23€</p>
+                    </div>
+                </div>
+                <button>
+                    <i class="fas fa-check-circle"></i>
+                </button>
+            </a>
+            <div id="showedClickable">
+                <i class="far fa-bell"></i>
+            </div>
         </div>
         <br><br>
 
@@ -180,7 +251,7 @@
     <!-- Gestion du pied-de-page (texte & logo) -->
     <footer class="foot">
         <div class="foot__title">
-            <h1 style="font-weight: normal; font-style: normal;">ohmyfood</h1>
+            <h1>ohmyfood</h1>
         </div>
         <p><span class="foot__icon-object">
                 <i class="fas fa-utensils"></i><span class="left-distancing">Proposer un restaurant</span>
@@ -189,7 +260,8 @@
                 <i class="fas fa-hands-helping"></i><span class="left-distancing-2">Devenir partenaire</span>
             </span>
             Mentions légales<br>
-            Contact</p>
+            <a href="mailto:rouanetflorian@gmail.com">Contact</a>
+        </p>
     </footer>
 </body>
 

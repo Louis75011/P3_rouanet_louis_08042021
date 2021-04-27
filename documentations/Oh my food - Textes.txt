@@ -55,7 +55,7 @@ Tartare de thon
 Assaisonné au yuzu
 25€
 
-Bouchée de homard croustillant 
+Bouchée de homard croustillant
 Et sa farandole de petits légumes
 35€
 
@@ -68,7 +68,7 @@ Poulet rôti aux herbes de Provence
 Et sa crème de truffe
 40€
 
-Langouste rôtie 
+Langouste rôtie
 Et ses légumes de saison
 35€
 
@@ -134,11 +134,11 @@ Macaron noisette et chocolat
 Glace au caramel brun et sel de Guérande
 18€
 
-Baba au rhum revisité 
+Baba au rhum revisité
 Avec son coulis de citron
 22€
 
-Tarte au citron meringuée 
+Tarte au citron meringuée
 Déstructurée
 23€
 

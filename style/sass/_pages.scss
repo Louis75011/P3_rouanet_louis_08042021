@@ -1,5 +1,6 @@
 // Fichier qui contient le reste du code et ce qui s'applique aux pages.
 
+// Responsive dekstop
 // Partie article/images de l'index
 .background-article {
     background-color: $lightgray;
@@ -8,17 +9,26 @@
 
 // Bloc BEM de la partie Restaurants
 .container-grid {
-    padding: 0px 12px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // grid-template-columns: 1fr;
+    // grid-gap: 1rem;
 }
 
 .box-many {
-    background-color: $white;
-    border-radius: 21px;
-    // width: 100%;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: $white;
+    border-radius: 21px;
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
-    margin-bottom: 1.9rem;
+    margin: 0.3rem;
 
     a {
         position: relative;
@@ -38,6 +48,11 @@ article div img {
     border-top-right-radius: 21px;
     width: 100%;
     display: flex;
+    // height: 19.5rem;
+}
+
+body header img {
+    width: 100%;
 }
 
 .textual {
@@ -49,6 +64,7 @@ article div img {
 }
 
 .textual-2 {
+    // font-weight: bold;
     position: relative;
     top: -9px;
 }
@@ -67,6 +83,14 @@ article div img {
     @include favourite;
 }
 
+.icon-heart-index .far {
+    transition: 280ms ease-in;
+}
+
+body section.background-food div.one-line.title-food span.icon-heart i.far.fa-heart {
+    transition: 280ms ease-in;
+}
+
 span:active i {
     font-weight: 900;
     background: -webkit-linear-gradient($color-primary, $color-secondary);
@@ -81,7 +105,7 @@ article a {
 }
 
 
-// 1) Gestion de la page restaurant numéro 1
+// Gestion des pages "restaurant"
 // En-tête
 .title-centrage {
     margin-left: auto;
@@ -92,7 +116,7 @@ article a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-//    margin-top: 20px;
+    //    margin-top: 20px;
 
     &__offset {
         transform: translateY(-20px);
@@ -105,13 +129,6 @@ article a {
     color: $graydark;
     font-size: 1.2rem;
 }
-
-// .single-img {
-//     width: 120% !important;
-//     height: 15.6rem !important;
-//     position: absolute;
-//     z-index: 0;
-// }
 
 // Partie choix alimentaire
 .background-food {
@@ -154,6 +171,7 @@ span.icon-heart:active i {
     width: 2.5em;
 }
 
+// Gestion des menus
 .btn-pages {
     @include button-principal;
     width: 50%;
@@ -183,215 +201,9 @@ span.icon-heart:active i {
         padding-right: 10px;
         padding-bottom: 5px;
     }
-
-    &__price-1 {
-        //position: relative;
-        //right: -170px;
-        // transform: translateX(175px);
-    }
-
-    &__price-2 {
-        position: relative;
-        right: -119px;
-    }
-
-    &__price-3 {
-        position: relative;
-        right: -99px;
-    }
-
-    &__price-4 {
-        position: relative;
-        right: -54px;
-    }
-
-    &__price-5 {
-        position: relative;
-        right: -64px;
-    }
-
-    &__price-6 {
-        position: relative;
-        right: -214px;
-    }
-
-    &__price-7 {
-        position: relative;
-        right: -246px;
-    }
-
-    &__price-8 {
-        position: relative;
-        right: -84px;
-    }
-
-    &__price-9 {
-        position: relative;
-        right: -57px;
-    }
-
-    // &:hover {
-    //         padding-left: 10px;
-    //         border-bottom-right-radius: 15px;
-    //         border-top-right-radius: 15px;
-    //         background-color: $color-tertiary;
-    //         color: $color-tertiary;
-
-    //         transition-delay: 500ms;
-    //         transform: translateX(1.2);
-    //     }
 }
 
 // Animation du bouton "ajout aux favoris"
-// .check {
-//     display: none;
-// }
-
-// Animation "apparition des menus"
-.btn-time1 {
-    animation: slidemenu 900ms;
-    // -moz-animation: slidemenu 1200ms; /* Firefox */
-    // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
-    // -o-animation: fadein 1200ms; /* Opera */
-}
-
-@keyframes slidemenu {
-    0% {
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.btn-time2 {
-    animation: slidemenu 1300ms;
-    margin-top: 10px;
-}
-
-@keyframes slidemenu {
-    0% {
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.btn-time3 {
-    animation: slidemenu 1700ms;
-    margin-top: 10px;
-}
-
-@keyframes slidemenu {
-    0% {
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-// .size-title {
-//     width: 100%;
-//     height: 50%;
-// }
-
-// .size-text {
-//     width: 80%;
-//     height: 100%;
-// }
-
-// .size-price {
-//     width: 20%;
-//     height: 100%;
-// }
-
-// .left {
-//     background: red;
-//     width: 100%;
-//     height: 100%;
-//     transition: width 500ms ;
-// }
-
-// .right {
-//     display: none;
-//     color: $color-tertiary;
-//     border-radius: 15px;
-//     background-color: $color-tertiary;
-//     width: 0%;
-//     height: 100%;
-//     transition: width 500ms;
-// }
-
-// .left:hover {
-//     width: 80%;
-// }
-
-// .right:hover {
-//     width: 20%;
-// }
-
-// .left:hover + .right {
-//     display: block;
-//     width: 20%;
-// }
-
-// .right:hover + .left {
-//     width: 80%;
-// }
-
-// color:white;
-// padding-top:20px;
-// font-size:10px;
-// opacity:0.6;
-// position:relative;
-// top:10px;
-// transition:all .3s;
-// font-weight:100;
-// text-decoration:none;
-// &:hover{
-//     opacity:1;
-
-// Animation du bouton "ajout aux favoris"
-// .check {
-//     display: none;
-// }
-
-// .btn-time {
-//     transition-delay: 1900ms;
-//     animation-duration: 2s;
-//     animation-direction: alternate;
-//     animation-name: slidebutton;
-
-//       @keyframes slidebutton {
-//         from {
-//           margin-top: 100%;
-//         }
-//         to {
-//           margin-bottom: 0%;
-//         }
-//       }
-// }
-
-// transition-property: bottom;
-// transform: transition-duration 4s;
-
 .btn-foods-child {
     //height: 100%;
     display: flex;
@@ -413,7 +225,7 @@ span.icon-heart:active i {
     width: 0%;
     padding: 0;
     overflow: hidden;
-    color: white;
+    color: $white;
     background-color: $color-tertiary;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
@@ -439,4 +251,690 @@ span.icon-heart:active i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+// cloche
+// .btn-foods:active {
+//     transform: translateX(1.5rem);
+// }
+
+// Animation "apparition progressive des menus"
+.btn-time1 {
+    animation: slidemenu 700ms;
+    // -moz-animation: slidemenu 1200ms; /* Firefox */
+    // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
+    // -o-animation: fadein 1200ms; /* Opera */
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-time2 {
+    animation: slidemenu 1400ms;
+    margin-top: 10px;
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-time3 {
+    animation: slidemenu 2100ms;
+    margin-top: 10px;
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-time4 {
+    animation: slidemenu 2800ms;
+    margin-top: 10px;
+}
+
+@keyframes slidemenu {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// Responsive tablette
+@media screen and (max-width: 960px) {
+
+    // Partie article/images de l'index
+    .background-article {
+        background-color: $lightgray;
+        padding-top: 10px;
+    }
+
+    // Bloc BEM de la partie Restaurants
+    article .container-grid {
+        padding: 0px 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article .box-many {
+        background-color: $white;
+        border-radius: 21px;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+        margin-bottom: 0.9rem;
+
+        &__single-img img {
+            height: 100%;
+        }
+
+        a {
+            position: relative;
+
+            div.bloc-new {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                user-select: none;
+            }
+        }
+    }
+
+    // Comportement images d'acceuil
+    article div img {
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
+        width: 100%;
+        display: flex;
+    }
+
+    .textual {
+        position: relative;
+        left: 14px;
+        // bottom: 0px;
+        line-height: 0.05rem;
+        // transform: translateY(-5px);
+    }
+
+    .textual-2 {
+        // font-weight: bold;
+        position: relative;
+        top: -9px;
+    }
+
+    .new {
+        @include new;
+    }
+
+    .title-heart {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-heart-index {
+        @include favourite;
+    }
+
+    span:active i {
+        font-weight: 900;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 280ms ease-in;
+    }
+
+    article a {
+        color: $black;
+        text-decoration: none;
+    }
+
+
+    // Gestion des pages "restaurant"
+    // En-tête
+    .title-centrage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .one-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        //    margin-top: 20px;
+
+        &__offset {
+            transform: translateY(-20px);
+        }
+    }
+
+    .previous-arrow {
+        margin-top: 30px;
+        margin-left: 20px;
+        color: $graydark;
+        font-size: 1.2rem;
+    }
+
+    // Partie choix alimentaire
+    .background-food {
+        background-color: $lightgray;
+        width: 100%;
+        padding-top: 1rem;
+        transform: translateY(-40px);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    .title-food {
+        //   display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .icon-heart {
+        color: $gray-intermediate-4;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    span.icon-heart:active i {
+        font-weight: 900;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        // transition: 280ms ease-in;
+    }
+
+    .sub-title {
+        font-size: medium;
+        // line-height: 1.5;
+        margin-left: 20px;
+        border-bottom: 3px solid $color-tertiary;
+        width: 2.5em;
+    }
+
+    // Gestion des menus
+    .btn-pages {
+        @include button-principal;
+        width: 50%;
+    }
+
+    .btn-foods {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87%;
+        height: 60px;
+        box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+        background-color: $white;
+        border-radius: 15px;
+        padding-bottom: -20px;
+
+        &__title {
+            //transform: translate(15px, 10px);
+            margin: 0;
+        }
+
+        &__description {
+            //transform: translate(15px, -21px);
+            margin: 0;
+            padding-right: 10px;
+            padding-bottom: 5px;
+        }
+    }
+
+    // Animation du bouton "ajout aux favoris"
+    .btn-foods-child {
+        //height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 10px;
+        flex: 1;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .btn-foods button {
+        //display: none;
+        border: none;
+        font-size: 30px;
+        width: 0%;
+        padding: 0;
+        overflow: hidden;
+        color: $white;
+        background-color: $color-tertiary;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods:hover button {
+        width: 20%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods:hover .btn-foods-child {
+        width: 80%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods .btn-foods-child {
+        width: 100%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // Animation "apparition progressive des menus"
+    .btn-time1 {
+        animation: slidemenu 900ms;
+        // -moz-animation: slidemenu 1200ms; /* Firefox */
+        // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
+        // -o-animation: fadein 1200ms; /* Opera */
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .btn-time2 {
+        animation: slidemenu 1300ms;
+        margin-top: 10px;
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .btn-time3 {
+        animation: slidemenu 1700ms;
+        margin-top: 10px;
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+// Responsive mobile
+@media screen and (max-width: 640px) {
+
+    // Partie article/images de l'index
+    .background-article {
+        background-color: $lightgray;
+        padding-top: 10px;
+    }
+
+    // Bloc BEM de la partie Restaurants
+    article .container-grid {
+        padding: 0px 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article .box-many {
+        background-color: $white;
+        border-radius: 21px;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+        margin-bottom: 0.9rem;
+
+        &__single-img img {
+            height: 100%;
+        }
+
+        a {
+            position: relative;
+
+            div.bloc-new {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                user-select: none;
+            }
+        }
+    }
+
+    // Comportement images d'acceuil
+    article div img {
+        border-top-left-radius: 21px;
+        border-top-right-radius: 21px;
+        width: 100%;
+        display: flex;
+    }
+
+    .textual {
+        position: relative;
+        left: 14px;
+        // bottom: 0px;
+        line-height: 0.05rem;
+        // transform: translateY(-5px);
+    }
+
+    .textual-2 {
+        // font-weight: bold;
+        position: relative;
+        top: -9px;
+    }
+
+    .new {
+        @include new;
+    }
+
+    .title-heart {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .icon-heart-index {
+        @include favourite;
+    }
+
+    span:active i {
+        font-weight: 900;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    article a {
+        color: $black;
+        text-decoration: none;
+    }
+
+
+    // Gestion des pages "restaurant"
+    // En-tête
+    .title-centrage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .one-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        //    margin-top: 20px;
+
+        &__offset {
+            transform: translateY(-20px);
+        }
+    }
+
+    .previous-arrow {
+        margin-top: 30px;
+        margin-left: 20px;
+        color: $graydark;
+        font-size: 1.2rem;
+    }
+
+    // Partie choix alimentaire
+    .background-food {
+        background-color: $lightgray;
+        width: 100%;
+        padding-top: 1rem;
+        transform: translateY(-40px);
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+
+    .title-food {
+        //   display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .icon-heart {
+        color: $gray-intermediate-4;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    span.icon-heart:active i {
+        font-weight: 900;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .sub-title {
+        font-size: medium;
+        // line-height: 1.5;
+        margin-left: 20px;
+        border-bottom: 3px solid $color-tertiary;
+        width: 2.5em;
+    }
+
+    // Gestion des menus
+    .btn-pages {
+        @include button-principal;
+        width: 50%;
+    }
+
+    .btn-foods {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87%;
+        height: 60px;
+        box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
+        background-color: $white;
+        border-radius: 15px;
+        padding-bottom: -20px;
+
+        &__title {
+            //transform: translate(15px, 10px);
+            margin: 0;
+        }
+
+        &__description {
+            //transform: translate(15px, -21px);
+            margin: 0;
+            padding-right: 10px;
+            padding-bottom: 5px;
+        }
+    }
+
+    // Animation du bouton "ajout aux favoris"
+    .btn-foods-child {
+        //height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 10px;
+        flex: 1;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .btn-foods button {
+        //display: none;
+        border: none;
+        font-size: 30px;
+        width: 0%;
+        padding: 0;
+        overflow: hidden;
+        color: $white;
+        background-color: $color-tertiary;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods:hover button {
+        width: 20%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods:hover .btn-foods-child {
+        width: 80%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .btn-foods .btn-foods-child {
+        width: 100%;
+        transition: width 300ms ease-in-out;
+    }
+
+    .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // Animation "apparition progressive des menus"
+    .btn-time1 {
+        animation: slidemenu 900ms;
+        // -moz-animation: slidemenu 1200ms; /* Firefox */
+        // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
+        // -o-animation: fadein 1200ms; /* Opera */
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .btn-time2 {
+        animation: slidemenu 1300ms;
+        margin-top: 10px;
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .btn-time3 {
+        animation: slidemenu 1700ms;
+        margin-top: 10px;
+    }
+
+    @keyframes slidemenu {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 }
