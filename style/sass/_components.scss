@@ -4,13 +4,11 @@
 // La recherche itinéraire
 .search {
     background-color: $gray-intermediate;
-    //box-shadow: 0 -5px 5px -5px $gray-intermediate-2;
     border-top: 2px solid rgba($gray-intermediate-2, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 60px;
-    // width: 100%;
     vertical-align: middle !important;
 }
 
@@ -40,8 +38,6 @@ input[type=search] {
 .operation-display {
     display: flex;
     flex-direction: row;
-    // margin-left: auto;
-    // margin-right: auto;
     width: 100%;
     justify-content: space-around;
     margin-right: 1rem;
@@ -93,8 +89,6 @@ input[type=search] {
         position: relative;
         left: 97px;
         top: -42px;
-        // display: flex;
-        // width: min-content;
     }
 }
 
@@ -174,9 +168,6 @@ section .operation-display button:active i {
     .operation-display {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
-        // margin-right: 1rem;
-        // margin-left: 1rem;
         width: auto;
 
         section,
@@ -223,11 +214,6 @@ section .operation-display button:active i {
             margin-right: 1rem;
             font-size: medium;
             position: inherit;
-            // position: relative;
-            // left: 97px;
-            // top: -42px;
-            // display: flex;
-            // width: min-content;
         }
     }
 
@@ -402,26 +388,6 @@ section .operation-display button:active i {
             flex-direction: column;
             justify-content: space-around;
         }
-
-    // Plus de 3 menus apparaissent progressivement
-    // .btn-apparition {
-    //     display: none;
-
-    //     &:active {
-    //         display: block;
-    //     }
-    // }
-
-    // #showedLoader {
-    //     position: absolute;
-    //     display: none;
-    //     width: auto;
-    //     height: auto;
-    // }
-
-    // a.clickable2:focus+#showedLoader {
-    //     display: block;
-    // }
 
     section .operation-display button:active i {
         color: $color-primary;

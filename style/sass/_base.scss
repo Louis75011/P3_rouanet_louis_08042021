@@ -1,6 +1,14 @@
 // Fichier pour définir les fondations de votre site (police de caractères et normes pour tout le site + animation de début)
 
 // La police d'écriture des titres et des textes de tout le body
+
+// @font-face {
+//     font-family: "Roboto";
+//     src: url('../font/Roboto-Black.ttf');
+//     src: url('../font/Roboto-BlackItalic.ttf');
+//     src: url('../font/Roboto-Bold.ttf');
+// }
+
 h1,
 h3,
 h5 {
@@ -9,7 +17,7 @@ h5 {
 
 h2,
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 
 h5 {
@@ -22,7 +30,8 @@ body .container-btn p.ellipsis {
 }
 
 body section.background-food div.one-line.btn-foods__description p {
-    font-size: 14px; font-weight: bold;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 html body footer.foot div.foot__title h1 {
@@ -58,9 +67,13 @@ html body footer.foot p a {
     cursor: pointer;
 }
 
+.bolder {
+    font-weight: normal !important;
+}
+
 // Recentrage pages et sections
 .padding-global {
-    padding: 8px;
+    padding: 9px;
 }
 
 body {
@@ -93,7 +106,8 @@ div#loading {
     width: 50%;
     margin: auto;
 
-    &:before, &:after{
+    &:before,
+    &:after {
         content: "";
         position: absolute;
         top: calc(50% - 40px);
@@ -104,13 +118,13 @@ div#loading {
         border: 10px solid transparent;
         border-top-color: $color-tertiary;
     }
-      
-    &:before{
+
+    &:before {
         z-index: 100;
         animation: spin 1s infinite;
     }
-      
-    &:after{
+
+    &:after {
         border: 10px solid $gray-intermediate-2;
     }
 

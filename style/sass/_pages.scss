@@ -13,11 +13,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // grid-template-columns: 1fr;
-    // grid-gap: 1rem;
 }
 
 .box-many {
@@ -48,7 +43,6 @@ article div img {
     border-top-right-radius: 21px;
     width: 100%;
     display: flex;
-    // height: 19.5rem;
 }
 
 body header img {
@@ -58,13 +52,10 @@ body header img {
 .textual {
     position: relative;
     left: 14px;
-    // bottom: 0px;
     line-height: 0.05rem;
-    // transform: translateY(-5px);
 }
 
 .textual-2 {
-    // font-weight: bold;
     position: relative;
     top: -9px;
 }
@@ -106,6 +97,15 @@ article a {
 
 
 // Gestion des pages "restaurant"
+// Fonds d'écran
+.background-title {
+    background-color: $white;
+}
+
+.background-body {
+    background-color: $lightgray;
+}
+
 // En-tête
 .title-centrage {
     margin-left: auto;
@@ -116,7 +116,6 @@ article a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    //    margin-top: 20px;
 
     &__offset {
         transform: translateY(-20px);
@@ -137,7 +136,7 @@ article a {
     padding-top: 1rem;
     transform: translateY(-40px);
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-right-radius: 40px; 
 }
 
 .title-food {
@@ -165,7 +164,6 @@ span.icon-heart:active i {
 
 .sub-title {
     font-size: medium;
-    // line-height: 1.5;
     margin-left: 20px;
     border-bottom: 3px solid $color-tertiary;
     width: 2.5em;
@@ -191,12 +189,10 @@ span.icon-heart:active i {
     padding-bottom: -20px;
 
     &__title {
-        //transform: translate(15px, 10px);
         margin: 0;
     }
 
     &__description {
-        //transform: translate(15px, -21px);
         margin: 0;
         padding-right: 10px;
         padding-bottom: 5px;
@@ -205,7 +201,6 @@ span.icon-heart:active i {
 
 // Animation du bouton "ajout aux favoris"
 .btn-foods-child {
-    //height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -219,7 +214,6 @@ span.icon-heart:active i {
 }
 
 .btn-foods button {
-    //display: none;
     border: none;
     font-size: 30px;
     width: 0%;
@@ -253,17 +247,9 @@ span.icon-heart:active i {
     text-overflow: ellipsis;
 }
 
-// cloche
-// .btn-foods:active {
-//     transform: translateX(1.5rem);
-// }
-
 // Animation "apparition progressive des menus"
 .btn-time1 {
     animation: slidemenu 700ms;
-    // -moz-animation: slidemenu 1200ms; /* Firefox */
-    // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
-    // -o-animation: fadein 1200ms; /* Opera */
 }
 
 @keyframes slidemenu {
@@ -356,7 +342,6 @@ span.icon-heart:active i {
     article .box-many {
         background-color: $white;
         border-radius: 21px;
-        // width: 100%;
         display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
@@ -389,13 +374,10 @@ span.icon-heart:active i {
     .textual {
         position: relative;
         left: 14px;
-        // bottom: 0px;
         line-height: 0.05rem;
-        // transform: translateY(-5px);
     }
 
     .textual-2 {
-        // font-weight: bold;
         position: relative;
         top: -9px;
     }
@@ -427,7 +409,6 @@ span.icon-heart:active i {
         color: $black;
         text-decoration: none;
     }
-
 
     // Gestion des pages "restaurant"
     // En-tête
@@ -465,7 +446,6 @@ span.icon-heart:active i {
     }
 
     .title-food {
-        //   display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
@@ -485,12 +465,10 @@ span.icon-heart:active i {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        // transition: 280ms ease-in;
     }
 
     .sub-title {
         font-size: medium;
-        // line-height: 1.5;
         margin-left: 20px;
         border-bottom: 3px solid $color-tertiary;
         width: 2.5em;
@@ -530,7 +508,6 @@ span.icon-heart:active i {
 
     // Animation du bouton "ajout aux favoris"
     .btn-foods-child {
-        //height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -581,9 +558,6 @@ span.icon-heart:active i {
     // Animation "apparition progressive des menus"
     .btn-time1 {
         animation: slidemenu 900ms;
-        // -moz-animation: slidemenu 1200ms; /* Firefox */
-        // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
-        // -o-animation: fadein 1200ms; /* Opera */
     }
 
     @keyframes slidemenu {
@@ -816,12 +790,10 @@ span.icon-heart:active i {
         padding-bottom: -20px;
 
         &__title {
-            //transform: translate(15px, 10px);
             margin: 0;
         }
 
         &__description {
-            //transform: translate(15px, -21px);
             margin: 0;
             padding-right: 10px;
             padding-bottom: 5px;
@@ -830,7 +802,6 @@ span.icon-heart:active i {
 
     // Animation du bouton "ajout aux favoris"
     .btn-foods-child {
-        //height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -881,9 +852,6 @@ span.icon-heart:active i {
     // Animation "apparition progressive des menus"
     .btn-time1 {
         animation: slidemenu 900ms;
-        // -moz-animation: slidemenu 1200ms; /* Firefox */
-        // -webkit-animation: fadein 1200ms; /* Safari et Chrome */
-        // -o-animation: fadein 1200ms; /* Opera */
     }
 
     @keyframes slidemenu {

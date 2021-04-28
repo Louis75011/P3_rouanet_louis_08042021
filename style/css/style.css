@@ -6,7 +6,7 @@ h5 {
 
 h2,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 h5 {
@@ -54,8 +54,12 @@ html body footer.foot p a {
   cursor: pointer;
 }
 
+.bolder {
+  font-weight: normal !important;
+}
+
 .padding-global {
-  padding: 8px;
+  padding: 9px;
 }
 
 body {
@@ -876,6 +880,14 @@ span:active i {
 article a {
   color: #000000;
   text-decoration: none;
+}
+
+.background-title {
+  background-color: #ffffff;
+}
+
+.background-body {
+  background-color: #f4f4f4;
 }
 
 .title-centrage {
