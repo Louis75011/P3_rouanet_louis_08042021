@@ -82,10 +82,18 @@ body section.background-food div.one-line.title-food span.icon-heart i.far.fa-he
     transition: 280ms ease-in;
 }
 
-span:active i {
+span.icon-heart:active i {
     font-weight: 900;
     background: -webkit-linear-gradient($color-primary, $color-secondary);
-    background-clip: text;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+body article div.box-many div.title-heart span.icon-heart-index:active i {
+    font-weight: 900;
+    background: -webkit-linear-gradient($color-primary, $color-secondary);
+    background-clip: content-box;
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -136,7 +144,7 @@ article a {
     padding-top: 1rem;
     transform: translateY(-40px);
     border-top-left-radius: 40px;
-    border-top-right-radius: 40px; 
+    border-top-right-radius: 40px;
 }
 
 .title-food {
@@ -152,14 +160,6 @@ article a {
     margin-left: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-span.icon-heart:active i {
-    font-weight: 900;
-    background: -webkit-linear-gradient($color-primary, $color-secondary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .sub-title {
@@ -186,7 +186,7 @@ span.icon-heart:active i {
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
     background-color: $white;
     border-radius: 15px;
-    padding-bottom: -20px;
+    // padding-bottom: -20px;
 
     &__title {
         margin: 0;
@@ -213,7 +213,15 @@ span.icon-heart:active i {
     }
 }
 
-.btn-foods button {
+body.background-body section a.clickable span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-foods span {
+    //display: none;
     border: none;
     font-size: 30px;
     width: 0%;
@@ -226,7 +234,7 @@ span.icon-heart:active i {
     transition: width 300ms ease-in-out;
 }
 
-.btn-foods:hover button {
+.btn-foods:hover span {
     width: 20%;
     transition: width 300ms ease-in-out;
 }
@@ -396,15 +404,6 @@ span.icon-heart:active i {
         @include favourite;
     }
 
-    span:active i {
-        font-weight: 900;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: 280ms ease-in;
-    }
-
     article a {
         color: $black;
         text-decoration: none;
@@ -459,14 +458,6 @@ span.icon-heart:active i {
         cursor: pointer;
     }
 
-    span.icon-heart:active i {
-        font-weight: 900;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
     .sub-title {
         font-size: medium;
         margin-left: 20px;
@@ -491,7 +482,7 @@ span.icon-heart:active i {
         box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
         background-color: $white;
         border-radius: 15px;
-        padding-bottom: -20px;
+        // padding-bottom: -20px;
 
         &__title {
             //transform: translate(15px, 10px);
@@ -632,7 +623,6 @@ span.icon-heart:active i {
     article .box-many {
         background-color: $white;
         border-radius: 21px;
-        // width: 100%;
         display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
@@ -665,13 +655,10 @@ span.icon-heart:active i {
     .textual {
         position: relative;
         left: 14px;
-        // bottom: 0px;
         line-height: 0.05rem;
-        // transform: translateY(-5px);
     }
 
     .textual-2 {
-        // font-weight: bold;
         position: relative;
         top: -9px;
     }
@@ -688,14 +675,6 @@ span.icon-heart:active i {
 
     .icon-heart-index {
         @include favourite;
-    }
-
-    span:active i {
-        font-weight: 900;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
     }
 
     article a {
@@ -715,7 +694,6 @@ span.icon-heart:active i {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        //    margin-top: 20px;
 
         &__offset {
             transform: translateY(-20px);
@@ -740,7 +718,6 @@ span.icon-heart:active i {
     }
 
     .title-food {
-        //   display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
@@ -754,17 +731,8 @@ span.icon-heart:active i {
         cursor: pointer;
     }
 
-    span.icon-heart:active i {
-        font-weight: 900;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
     .sub-title {
         font-size: medium;
-        // line-height: 1.5;
         margin-left: 20px;
         border-bottom: 3px solid $color-tertiary;
         width: 2.5em;
@@ -787,7 +755,6 @@ span.icon-heart:active i {
         box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
         background-color: $white;
         border-radius: 15px;
-        padding-bottom: -20px;
 
         &__title {
             margin: 0;
@@ -814,7 +781,14 @@ span.icon-heart:active i {
         }
     }
 
-    .btn-foods button {
+    body.background-body section a.clickable span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-foods span {
         //display: none;
         border: none;
         font-size: 30px;
@@ -828,7 +802,7 @@ span.icon-heart:active i {
         transition: width 300ms ease-in-out;
     }
 
-    .btn-foods:hover button {
+    .btn-foods:hover span {
         width: 20%;
         transition: width 300ms ease-in-out;
     }

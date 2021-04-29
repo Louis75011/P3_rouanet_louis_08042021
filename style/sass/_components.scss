@@ -98,7 +98,7 @@ input[type=search] {
     position: relative;
 }
 
-#showedClickable {
+.showedClickable {
     position: absolute;
     right: 20px;
     display: none;
@@ -106,19 +106,18 @@ input[type=search] {
     height: 100%;
 }
 
-#showedClickable i {
+.showedClickable i {
     font-size: larger;
     color: $color-tertiary;
 }
 
-a.clickable:focus+#showedClickable {
+a.clickable:focus+.showedClickable {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 // Icônes des boutons
-
 section .operation-display button:active i {
     color: $color-primary;
     // color: rgba($color-primary, 1);
@@ -139,7 +138,6 @@ section .operation-display button:active i {
         align-items: center;
         justify-content: center;
         height: 50px;
-        // width: 100%;
         vertical-align: middle !important;
     }
 
@@ -225,9 +223,7 @@ section .operation-display button:active i {
 
     #showedClickable {
         position: absolute;
-        // top: 116px;
         right: 20px;
-        // left: -149px;
         display: none;
         width: auto;
         height: 100%;
@@ -244,21 +240,8 @@ section .operation-display button:active i {
         justify-content: space-around;
     }
 
-    // .bell {
-    //     display: none;
-    //     // &:active {
-    //     //     display: inline-block;
-
-    //     // }
-    // }
-
-    // .bell:active {
-    //     display: block;
-    // }
-
     section .operation-display button:active i {
         color: $color-primary;
-        // color: rgba($color-primary, 1);
     }
 
     // Icônes des boutons
@@ -278,7 +261,6 @@ section .operation-display button:active i {
         align-items: center;
         justify-content: center;
         height: 50px;
-        // width: 100%;
         vertical-align: middle !important;
     }
 
@@ -356,42 +338,38 @@ section .operation-display button:active i {
             position: relative;
             left: -37px;
             top: 0px;
-            // transform: translate(-145px, 40px);
         }
     }
 
-        // Gestion de la cloche
-        .container-btn {
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: center;
-        }
-    
-        #showedClickable {
-            position: absolute;
-            // top: -338px;
-            right: 4px;
-            // left: -149px;
-            display: none;
-            width: auto;
-            height: 100%;
-        }
-    
-        #showedClickable i {
-            font-size: larger;
-            color: $color-tertiary;
-        }
-    
-        a.clickable:focus+#showedClickable {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
+    // Gestion de la cloche
+    .container-btn {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .showedClickable {
+        position: absolute;
+        right: 4px;
+        display: none;
+        width: auto;
+        height: 100%;
+    }
+
+    .showedClickable i {
+        font-size: larger;
+        color: $color-tertiary;
+    }
+
+    a.clickable:focus+.showedClickable {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
     section .operation-display button:active i {
         color: $color-primary;
-        // color: rgba($color-primary, 1);
     }
 
     // Icônes des boutons

@@ -177,6 +177,7 @@
         width: 250px;
         display: flex;
         text-align: center;
+        margin-bottom: 0.5rem;
     }
 
     .centrage-specific-width-2 {
@@ -203,7 +204,7 @@
     // Bloc BEM du footer
     .foot {
         padding: $distancing;
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 1.65;
         background-color: $graydark;
         color: $white;

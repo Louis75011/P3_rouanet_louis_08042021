@@ -35,6 +35,7 @@ $text-size: 2rem;
     font-size: 1rem;
     transition: 300ms;
     box-shadow: 4px 4px 4px rgba(10, 10, 10, 0.2);
+
     &:hover,
     &:focus {
         transform: scale(1.03);
@@ -43,6 +44,7 @@ $text-size: 2rem;
         // background: lighten($color-secondary, 30);
         box-shadow: 6px 6px 6px rgba(10, 10, 10, 0.3);
     }
+
     &:active {
         transform: scale(1.0);
         transition: 100ms;
@@ -54,7 +56,6 @@ $text-size: 2rem;
     padding: 29px 25px 26px 23px;
     border-radius: 19px;
     border: none;
-    // background-color: $verylightgray;
     margin-bottom: 1.3rem;
     font-size: 1.05em;
     box-shadow: 5px 5px 5px rgba(40, 40, 40, 0.1);
@@ -66,7 +67,7 @@ $text-size: 2rem;
     font-size: 1.4rem;
     position: relative;
     right: 38px;
-    top :20px;
+    top: 20px;
     cursor: pointer;
 }
 

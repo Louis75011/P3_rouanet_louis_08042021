@@ -1,65 +1,62 @@
 h1,
-h3,
-h5 {
+h2 {
   font-family: "Shrikhand";
 }
 
-h2,
-p {
+h3,
+h4 {
   font-family: "Roboto";
 }
 
-h5 {
-  font-size: 25px;
+body header div.background-header h4.centrage-specific-width {
+  font-size: 23px;
+  line-height: 28.2px;
 }
 
-body .container-btn p.ellipsis {
-  font-size: 14px;
+body header div.background-header div.centrage-specific-width-2.element-offset p {
+  font-size: 18px;
+  opacity: 0.5;
+  word-spacing: 2px;
+  line-height: 22.2px;
+  margin-bottom: -3px;
 }
 
-body section.background-food div.one-line.btn-foods__description p {
-  font-size: 14px;
+body section.padding-global h3,
+body article.background-article.padding-global h3 {
+  font-size: 23px;
+  margin-left: 0.9rem;
+}
+
+.btn-display-text {
   font-weight: bold;
+  letter-spacing: -0.5px;
+  color: #3b3b3b;
+  font-family: "Roboto";
 }
 
-html body footer.foot div.foot__title h1 {
-  font-weight: normal;
-  font-style: normal;
-}
-
-html body article div.box-many div.textual div.title-heart h4 {
+body div.box-many div.textual div.title-heart h4 {
   font-size: 18px;
 }
 
-body article div.box-many div.textual div.title-heart h4 {
-  font-size: 1.6rem;
+body div.box-many div.textual div.textual-2 p {
+  font-style: normal;
+  font-size: 17px;
+  font-family: "Roboto";
+  line-height: 1px;
+  opacity: 0.7;
 }
 
-body article div.box-many div.textual div.textual-2 p {
-  font-weight: bold;
+body.background-body section.background-food h3.sub-title {
+  font-weight: normal;
+  opacity: 0.6;
 }
 
-body article.background-article.padding-global h4 {
-  font-size: 1.6rem;
-  margin-left: 3px;
-}
-
-html body section.padding-global h4 {
-  font-size: 1.6rem;
-  margin-left: 5px;
-}
-
-html body footer.foot p a {
-  color: inherit;
-  cursor: pointer;
-}
-
-.bolder {
-  font-weight: normal !important;
-}
-
-.padding-global {
-  padding: 9px;
+body section .btn-foods__description p.ellipsis {
+  opacity: 0.6;
+  font-size: 15.9px;
+  letter-spacing: -0.2px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 body {
@@ -68,9 +65,11 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 a:visited {
   color: inherit;
+  text-decoration: none;
 }
 
 div#loading-container {
@@ -290,6 +289,7 @@ div#loading:after {
     width: 250px;
     display: flex;
     text-align: center;
+    margin-bottom: 0.5rem;
   }
 
   .centrage-specific-width-2 {
@@ -314,7 +314,7 @@ div#loading:after {
 
   .foot {
     padding: 0.9rem;
-    font-size: 0.9em;
+    font-size: 1em;
     line-height: 1.65;
     background-color: #3b3b3b;
     color: #ffffff;
@@ -462,7 +462,7 @@ input[type=search] {
   position: relative;
 }
 
-#showedClickable {
+.showedClickable {
   position: absolute;
   right: 20px;
   display: none;
@@ -470,12 +470,12 @@ input[type=search] {
   height: 100%;
 }
 
-#showedClickable i {
+.showedClickable i {
   font-size: larger;
   color: #99E2D0;
 }
 
-a.clickable:focus + #showedClickable {
+a.clickable:focus + .showedClickable {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -753,7 +753,7 @@ section .operation-display button:active i {
     justify-content: center;
   }
 
-  #showedClickable {
+  .showedClickable {
     position: absolute;
     right: 4px;
     display: none;
@@ -761,12 +761,12 @@ section .operation-display button:active i {
     height: 100%;
   }
 
-  #showedClickable i {
+  .showedClickable i {
     font-size: larger;
     color: #99E2D0;
   }
 
-  a.clickable:focus + #showedClickable {
+  a.clickable:focus + .showedClickable {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -869,10 +869,18 @@ body section.background-food div.one-line.title-food span.icon-heart i.far.fa-he
   transition: 280ms ease-in;
 }
 
-span:active i {
+span.icon-heart:active i {
   font-weight: 900;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body article div.box-many div.title-heart span.icon-heart-index:active i {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -934,14 +942,6 @@ article a {
   cursor: pointer;
 }
 
-span.icon-heart:active i {
-  font-weight: 900;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 .sub-title {
   font-size: medium;
   margin-left: 20px;
@@ -984,7 +984,6 @@ span.icon-heart:active i {
   box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
   background-color: #ffffff;
   border-radius: 15px;
-  padding-bottom: -20px;
 }
 .btn-foods__title {
   margin: 0;
@@ -1007,7 +1006,14 @@ span.icon-heart:active i {
   margin: 0;
 }
 
-.btn-foods button {
+body.background-body section a.clickable span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-foods span {
   border: none;
   font-size: 30px;
   width: 0%;
@@ -1020,7 +1026,7 @@ span.icon-heart:active i {
   transition: width 300ms ease-in-out;
 }
 
-.btn-foods:hover button {
+.btn-foods:hover span {
   width: 20%;
   transition: width 300ms ease-in-out;
 }
@@ -1178,15 +1184,6 @@ span.icon-heart:active i {
     cursor: pointer;
   }
 
-  span:active i {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: 280ms ease-in;
-  }
-
   article a {
     color: #000000;
     text-decoration: none;
@@ -1236,14 +1233,6 @@ span.icon-heart:active i {
     cursor: pointer;
   }
 
-  span.icon-heart:active i {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
   .sub-title {
     font-size: medium;
     margin-left: 20px;
@@ -1286,7 +1275,6 @@ span.icon-heart:active i {
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
     background-color: #ffffff;
     border-radius: 15px;
-    padding-bottom: -20px;
   }
   .btn-foods__title {
     margin: 0;
@@ -1465,14 +1453,6 @@ span.icon-heart:active i {
     cursor: pointer;
   }
 
-  span:active i {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
   article a {
     color: #000000;
     text-decoration: none;
@@ -1522,14 +1502,6 @@ span.icon-heart:active i {
     cursor: pointer;
   }
 
-  span.icon-heart:active i {
-    font-weight: 900;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
   .sub-title {
     font-size: medium;
     margin-left: 20px;
@@ -1572,7 +1544,6 @@ span.icon-heart:active i {
     box-shadow: 5px 5px 5px rgba(10, 10, 10, 0.1);
     background-color: #ffffff;
     border-radius: 15px;
-    padding-bottom: -20px;
   }
   .btn-foods__title {
     margin: 0;
@@ -1595,7 +1566,14 @@ span.icon-heart:active i {
     margin: 0;
   }
 
-  .btn-foods button {
+  body.background-body section a.clickable span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-foods span {
     border: none;
     font-size: 30px;
     width: 0%;
@@ -1608,7 +1586,7 @@ span.icon-heart:active i {
     transition: width 300ms ease-in-out;
   }
 
-  .btn-foods:hover button {
+  .btn-foods:hover span {
     width: 20%;
     transition: width 300ms ease-in-out;
   }
