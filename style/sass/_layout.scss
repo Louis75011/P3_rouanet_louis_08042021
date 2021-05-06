@@ -41,15 +41,15 @@
 }
 
 // Footer de toutes les pages
-.foot h2 {
-    font-size: 1rem;
+.foot h5 {
+    font-size: 1.50rem;
 }
 
 // Bloc BEM du footer
 .foot {
     padding: $distancing;
     font-size: 1.3em;
-    line-height: 1.95;
+    line-height: 1.55;
     background-color: $graydark;
     color: $white;
     font-weight: bold;
@@ -126,14 +126,14 @@
     .foot {
         padding: $distancing;
         font-size: 1.3em;
-        line-height: 1.95;
+        line-height: 1.45;
         background-color: $graydark;
         color: $white;
         font-weight: bold;
 
         &__title {
             font-style: italic;
-            font-size: 0.58rem;
+            font-size: 1.58rem;
         }
 
         &__icon-object {
@@ -197,15 +197,15 @@
     }
 
     // Footer de toutes les pages
-    .foot h2 {
-        font-size: 1rem;
+    .foot h5 {
+        font-size: 1.11rem;
     }
 
     // Bloc BEM du footer
     .foot {
         padding: $distancing;
         font-size: 1em;
-        line-height: 1.65;
+        line-height: 1.39;
         background-color: $graydark;
         color: $white;
         font-weight: bold;

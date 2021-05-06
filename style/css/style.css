@@ -1,5 +1,6 @@
 h1,
-h2 {
+h2,
+h5 {
   font-family: "Shrikhand";
 }
 
@@ -169,14 +170,14 @@ div#loading:after {
   transform: translateY(-30px);
 }
 
-.foot h2 {
-  font-size: 1rem;
+.foot h5 {
+  font-size: 1.5rem;
 }
 
 .foot {
   padding: 0.9rem;
   font-size: 1.3em;
-  line-height: 1.95;
+  line-height: 1.55;
   background-color: #3b3b3b;
   color: #ffffff;
   font-weight: bold;
@@ -245,14 +246,14 @@ div#loading:after {
   .foot {
     padding: 0.9rem;
     font-size: 1.3em;
-    line-height: 1.95;
+    line-height: 1.45;
     background-color: #3b3b3b;
     color: #ffffff;
     font-weight: bold;
   }
   .foot__title {
     font-style: italic;
-    font-size: 0.58rem;
+    font-size: 1.58rem;
   }
   .foot__icon-object {
     display: flex;
@@ -308,14 +309,14 @@ div#loading:after {
     transform: translateY(-30px);
   }
 
-  .foot h2 {
-    font-size: 1rem;
+  .foot h5 {
+    font-size: 1.11rem;
   }
 
   .foot {
     padding: 0.9rem;
     font-size: 1em;
-    line-height: 1.65;
+    line-height: 1.39;
     background-color: #3b3b3b;
     color: #ffffff;
     font-weight: bold;
