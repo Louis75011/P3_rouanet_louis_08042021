@@ -14,6 +14,10 @@ body header div.background-header h4.centrage-specific-width {
   line-height: 28.2px;
 }
 
+html body header div.background-header h2.centrage-specific-width {
+  font-family: "Roboto" !important;
+}
+
 body header div.background-header div.centrage-specific-width-2.element-offset p {
   font-size: 18px;
   opacity: 0.5;
